@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
  .hero-stack {
   height: 30vh;
   min-height: 220px;
@@ -42,8 +43,8 @@
   align-items: center;
   margin-top: 0.5rem;
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
- .hero-desc {
+
+.hero-desc {
   font-family: 'Noto Sans KR', 'system-ui', 'Avenir', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   white-space: pre-line;
@@ -399,21 +400,30 @@ section {
 }
 .skills-list {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: nowrap; /* 박스를 한 줄로 유지합니다. */
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow-x: auto;
 }
 .skills-list li {
-  background: #312e81;
+  background: #342f3b; /* 보라색으로 변경 */
   color: #fff;
   border-radius: 12px;
-  padding: 0.4rem 1rem;
-  font-size: 1rem;
-  width: fit-content;
+  width: 60px; /* 박스 크기를 키웁니다. */
+  height: 60px; /* 박스 크기를 키웁니다. */
+  display: flex;
+  align-items: center; /* 아이콘을 박스 가운데로 정렬합니다. */
+  justify-content: center; /* 아이콘을 박스 가운데로 정렬합니다. */
+  flex-shrink: 0;
 }
-
+.skills-list li img {
+  width: 50px; /* 박스에 맞게 이미지 크기를 조정 */
+  height: 50px;
+}
 .projects-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -502,4 +512,54 @@ section {
 
 .read-the-docs {
   color: #888;
+}
+
+body {
+  background-color: #242424; 
+  background-attachment: fixed; 
+  background-repeat: repeat; 
+  background-position: var(--star-bg-pos, 0 0); 
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20% 10%, #ffb300, transparent),
+    radial-gradient(1px 1px at 80% 90%, #ffb300, transparent),
+    radial-gradient(2px 2px at 60% 40%, #ffb300, transparent),
+    radial-gradient(1.5px 1.5px at 10% 70%, #ffb300, transparent),
+    radial-gradient(1.5px 1.5px at 90% 30%, #ffb300, transparent),
+    radial-gradient(2px 2px at 30% 80%, #ffb300, transparent),
+    radial-gradient(1px 1px at 70% 20%, #ffb300, transparent),
+    radial-gradient(2px 2px at 20% 10%, #ffb300, transparent),
+    radial-gradient(1px 1px at 80% 90%, #ffb300, transparent),
+    radial-gradient(2px 2px at 60% 40%, #ffb300, transparent),
+    radial-gradient(1.5px 1.5px at 10% 70%, #ffb300, transparent),
+    radial-gradient(1.5px 1.5px at 90% 30%, #ffb300, transparent),
+    radial-gradient(2px 2px at 30% 80%, #ffb300, transparent),
+    radial-gradient(1px 1px at 70% 20%, #ffb300, transparent),
+    radial-gradient(2px 2px at 20% 10%, #ffb300, transparent),
+    radial-gradient(1px 1px at 80% 90%, #ffb300, transparent),
+    radial-gradient(2px 2px at 60% 40%, #ffb300, transparent),
+    radial-gradient(1.5px 1.5px at 10% 70%, #ffb300, transparent),
+    radial-gradient(1.5px 1.5px at 90% 30%, #ffb300, transparent),
+    radial-gradient(2px 2px at 30% 80%, #ffb300, transparent),
+    radial-gradient(1px 1px at 70% 20%, #ffb300, transparent);
+  
+  background-size: 100% 100%;
+  animation: twinkle 5s linear infinite;
+  z-index: 100;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
 }
