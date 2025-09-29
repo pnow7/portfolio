@@ -35,7 +35,7 @@ const AboutPage = ({ onlySection }) => (
 					/>
 					<h2 style={{ marginBottom: 8 }}>About Me</h2>
 					<p style={{ fontSize: "1.1rem", marginBottom: 12 }}>
-						안녕하세요! 저는 <b>풀스택 개발자 Pnow7</b>입니다.<br />
+						안녕하세요! 저는 <b>신입 풀스택 개발자 박현재</b>입니다.<br />
 						사용자 경험과 효율적인 시스템 설계를 중요하게 생각하며,<br />
 						다양한 기술을 활용해 문제를 해결하는 것을 즐깁니다.
 					</p>
