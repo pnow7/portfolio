@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import profileImage from "../assets/profile.jpg";
 import Footer from "../components/Footer";
 
 const hashtags = [
@@ -29,7 +30,7 @@ const AboutPage = ({ onlySection }) => (
 			<section className="about-section about-section-style">
 				<div className="about-content-wrapper">
 					<img
-						src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+						src={profileImage}
 						alt="3D Character"
 						className="about-profile-img"
 					/>
@@ -90,7 +91,7 @@ const AboutPage = ({ onlySection }) => (
 					<div className="about-content-wrapper">
 						<img
 							src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
-							alt="3D Character"
+							alt="현재 사진"
 							className="about-profile-img"
 						/>
 						<h2 className="about-title">About Me</h2>
