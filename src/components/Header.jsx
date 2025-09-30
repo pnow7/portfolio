@@ -1,3 +1,4 @@
+import React from "react";
 
 const Header = () => (
 	<header className="header">
@@ -9,6 +10,7 @@ const Header = () => (
 				<li><a href="#hero">홈</a></li>
 				<li><a href="#about">소개</a></li>
 				<li><a href="#projects">프로젝트</a></li>
+				<li><a href="#education">학력 및 교육</a></li> 
 				<li><a href="#contact">연락처</a></li>
 			</ul>
 		</nav>

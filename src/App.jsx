@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutSection from "./pages/AboutPage";
 import ProjectsSection from "./pages/ProjectsPage";
+import EducationSection from "./pages/EducationPage";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </section>
         <section id="projects">
           <ProjectsSection onlySection />
+        </section>
+        <section id="education"> {/* 새로운 Education 섹션 추가 */}
+          <EducationSection onlySection />
         </section>
         <section id="contact" className="contact-section">
           <h2>Contact</h2>
