@@ -59,29 +59,18 @@
   padding: 0 16px;
   line-height: 1.7;
 }
+
+/* 900px 미만 미디어 쿼리 통합 */
 @media (max-width: 900px) {
   .hero-desc {
     font-size: 1.1rem;
     max-width: 95vw;
     margin: 0 auto 1.5rem auto;
     text-align: center;
-  }
-}
-@media (max-width: 900px) {
-  .hero-desc {
-    font-size: 1.1rem;
-    max-width: 95vw;
-    margin-left: 2vw;
-    text-align: left;
-  }
-}
-@media (max-width: 900px) {
-  .hero-desc {
-    font-size: 1.1rem;
-    max-width: 95vw;
     white-space: normal;
   }
 }
+
 .hero-stack {
   position: relative;
   width: 100vw;
@@ -562,4 +551,48 @@ body::before {
   0% { transform: scale(1); opacity: 0.8; }
   50% { transform: scale(1.1); opacity: 1; }
   100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* AboutPage.jsx에서 사용된 인라인 스타일을 클래스로 전환 */
+.about-section-style {
+  text-align: center;
+}
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-profile-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 24px rgba(124,58,237,0.15);
+}
+.about-title {
+  margin-bottom: 8px;
+}
+.about-desc {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.about-hashtags {
+  margin-bottom: 18px;
+  justify-content: center;
+}
+.about-github-btn {
+  margin-bottom: 24px;
+}
+.skill-icon-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* HomePage.jsx에서 사용된 인라인 스타일을 클래스로 전환 */
+.intro-profile-img {
+  width: 160px;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+.hero-contact-btn {
+  margin-top: 24px;
 }

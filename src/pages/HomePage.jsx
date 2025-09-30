@@ -10,8 +10,7 @@ const HomePage = () => (
 				<img
 					src="/vite.svg"
 					alt="Profile"
-					className="profile-img"
-					style={{ width: 160, borderRadius: "50%", margin: "2rem auto" }}
+					className="profile-img intro-profile-img"
 				/>
 				<h1>안녕하세요, 풀스택 개발자 Pnow7입니다.</h1>
 				<p>웹 프론트엔드와 백엔드 모두에 능숙한 개발자입니다.<br />
