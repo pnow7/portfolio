@@ -11,8 +11,8 @@ const education = [
         type: "교육 이수",
         institution: "휴먼교육센터",
         major: "자바 풀스택 과정 이수",
-        period: "2025.02 ~ 2025.08",
-        description: "풀스택 개발자 양성 과정을 수료하며 프로젝트를 수행했습니다.",
+        period: "2025.02 ~ 2025.11",
+        description: "풀스택 개발자 양성 과정 및 Ai 기초 모델 개발 과정을 수료하며 프로젝트를 수행했습니다.",
         color: 'linear-gradient(135deg, #42A5F5, #8860D0)'
     },
     {
