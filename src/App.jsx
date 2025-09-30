@@ -17,7 +17,7 @@ function App() {
               <span className="hero-intro-text">풀스택 개발자 박현재입니다.</span>
             </div>
             <div className="hero-desc-col">
-              <p className="hero-desc">'현재에 충실히 하는<br />신입 개발자 입니다'</p>
+              <p className="hero-desc">'현재에 충실히 하는 신입 개발자 입니다'</p>
               <a href="#about" className="contact-btn" style={{marginTop:24}}>더 알아보기</a>
             </div>
           </div>
