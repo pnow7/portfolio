@@ -21,7 +21,7 @@ const ProjectsPage = ({ onlySection }) => {
 
     return (
         onlySection ? (
-            <div className="main-section">
+            <div>
                 <section className="projects-section">
                     <h2 className="section-title">My Projects</h2>
                     <div className="projects-list">
@@ -41,7 +41,7 @@ const ProjectsPage = ({ onlySection }) => {
         ) : (
             <>
                 <Header />
-                <main className="main-section">
+                <main>
                     <section className="projects-section">
                         <h2 className="section-title">My Projects</h2>
                         <div className="projects-list">

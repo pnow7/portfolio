@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const HomePage = () => (
 	<>
 		<Header />
-		<main className="main-section">
+		<main>
 			<section className="intro-section">
 				<img
 					src="/vite.svg"

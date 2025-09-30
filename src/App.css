@@ -162,13 +162,6 @@ html, body {
   overflow-x: hidden;
 }
 
-.main-section {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-}
-
 section {
   margin-bottom: 4rem;
 }
@@ -298,11 +291,6 @@ section {
   color: #7c3aed;
 }
 
-.main-section {
-  /*min-height: 80vh;*/
-  padding: 2rem 0 3rem 0;
-  background: #242424;
-}
 .intro-section {
   max-width: 600px;
   margin: 0 auto;

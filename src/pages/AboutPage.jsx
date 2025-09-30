@@ -26,7 +26,8 @@ const backendSkills = [
 
 const AboutPage = ({ onlySection }) => (
 	onlySection ? (
-		<div className="main-section">
+		<div>
+			<h2 className="section-title">About Me</h2>
 			<section className="about-section about-section-style">
 				<div className="about-content-wrapper">
 					<img
@@ -34,7 +35,6 @@ const AboutPage = ({ onlySection }) => (
 						alt="3D Character"
 						className="about-profile-img"
 					/>
-					<h2 className="about-title">About Me</h2>
 					<p className="about-desc">
 						안녕하세요! 저는 <b>신입 풀스택 개발자 박현재</b>입니다.<br />
 						사용자 경험과 효율적인 시스템 설계를 중요하게 생각하며,<br />
@@ -86,7 +86,7 @@ const AboutPage = ({ onlySection }) => (
 	) : (
 		<>
 			<Header />
-			<main className="main-section">
+			<main>
 				<section className="about-section about-section-style">
 					<div className="about-content-wrapper">
 						<img
