@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
-import ProjectModal from "../components/ProjectModal"; // ProjectModal import
-import projectsData from "../data/projects"; // 프로젝트 데이터
+import ProjectModal from "../components/ProjectModal";
+import projectsData from "../data/projects";
 
 const ProjectsPage = ({ onlySection }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +29,7 @@ const ProjectsPage = ({ onlySection }) => {
                             <ProjectCard
                                 key={project.id}
                                 project={project}
-                                onCardClick={openModal}
+                                onDetailsClick={openModal}
                             />
                         ))}
                     </div>
@@ -49,7 +49,7 @@ const ProjectsPage = ({ onlySection }) => {
                                 <ProjectCard
                                     key={project.id}
                                     project={project}
-                                    onCardClick={openModal}
+                                    onDetailsClick={openModal}
                                 />
                             ))}
                         </div>

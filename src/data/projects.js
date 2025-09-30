@@ -5,7 +5,7 @@ const projects = [
         summary: "숙박업체 운영 인력의 업무·일정·객실 관리를 통합하는 웹 기반 스케줄 관리 시스템입니다.",
         description: `
 ### 📌 프로젝트 주제
-숙박업체 운영 인력의 업무·일정·객실 관리를 통합하는 웹 기반 스케줄 관리 시스템
+**주제:** 숙박업체 운영 인력의 업무·일정·객실 관리를 통합하는 웹 기반 스케줄 관리 시스템
 (고객 예약 관리 X / 직원·업소 관리 O)
 
 ### 🎯 목표
@@ -21,9 +21,14 @@ const projects = [
 - **공지사항:** 공지사항 목록 조회 및 등록, 수정, 삭제
 - **게시판:** 직원 간 소통을 위한 게시판 기능
         `.trim(),
-        skills: ["IntelliJ IDEA", "Spring Boot", "JSP", "Oracle Database", "GitHub", "JANDI"],
-        github: "https://github.com/Team-MobyDick/hms", 
-        team: "팀 프로젝트",
+        skills: {
+            frontend: ["JSP"],
+            backend: ["Spring Boot", "Oracle Database"],
+            tools: ["IntelliJ IDEA", "GitHub", "JANDI"],
+        },
+        github: "https://github.com/Team-MobyDick/hms",
+        team: "팀",
+        gradientColors: 'linear-gradient(135deg, #FF6B6B, #F9D423)', // 주황-노랑 그라데이션
     },
     {
         id: 2,
@@ -46,9 +51,14 @@ const projects = [
   * 역할: 백엔드 개발, 데이터베이스 설계
   * 사용 기술: Spring Boot, Oracle DB
         `.trim(),
-        skills: ["React", "Spring Boot", "Oracle DB", "Java", "JavaScript", "HTML", "CSS", "Kakao Maps API", "OpenAi"],
+        skills: {
+            frontend: ["React", "JavaScript", "HTML", "CSS"],
+            backend: ["Java", "Spring Boot", "Oracle DB"],
+            tools: ["Kakao Maps API", "OpenAi"],
+        },
         github: "https://github.com/Team-2Gether/Local7",
-        team: "팀 프로젝트",
+        team: "팀",
+        gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)', // 하늘-보라 그라데이션
     },
 ];
 
