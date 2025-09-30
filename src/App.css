@@ -419,27 +419,27 @@ section {
   padding: 2rem 1rem;
 }
 .projects-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+    display: grid;
+    /* 카드의 최소 너비를 줄이고 높이를 늘려 직사각형 형태로 변경 */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 .project-card {
-  background: #181818;
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  padding: 1.5rem 1rem 1rem 1rem;
-  text-align: left;
-  transition: transform 0.2s, box-shadow 0.2s;
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .project-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 8px 32px rgba(124,58,237,0.12);
-}
-.project-img {
-  margin-bottom: 1rem;
-  object-fit: cover;
-  height: 180px;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(124,58,237,0.2);
 }
 .skills {
   margin-top: 1rem;
@@ -595,4 +595,71 @@ body::before {
 }
 .hero-contact-btn {
   margin-top: 24px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #a78bfa;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+/* 프로젝트 카드 전체 크기 및 내용 정렬 */
+.project-card {
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer; /* 클릭 가능하도록 커서 변경 */
+    display: flex; /* flexbox 사용 */
+    flex-direction: column; /* 세로 정렬 */
+    height: 100%; /* 부모 그리드 아이템에 꽉 차도록 설정 */
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(124,58,237,0.2);
+}
+
+.project-title {
+    font-size: 1.4rem;
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project-summary {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.project-team-badge {
+    background: #a78bfa;
+    color: #181818;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* 기존 skill-badge 스타일 유지 (필요하다면) */
+.skill-badge {
+    background: #7c3aed;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
 }

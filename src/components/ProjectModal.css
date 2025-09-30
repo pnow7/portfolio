@@ -1,0 +1,133 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    max-height: 95vh;
+    overflow-y: auto;
+    position: relative;
+    color: #f0f0f0;
+    text-align: left;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-close-btn:hover {
+    color: #fff;
+}
+
+.modal-content h2 {
+    color: #a78bfa;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.modal-content h3 {
+    color: #a78bfa;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.modal-content p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.modal-hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-hashtag {
+    background: #7c3aed;
+    color: #fff;
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.modal-hashtag.team-badge {
+    background: #a78bfa;
+    color: #181818;
+    font-weight: 700;
+}
+
+.modal-link {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.modal-link:hover {
+    color: #fff;
+}
+
+.modal-description h3 {
+    color: #a78bfa;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.modal-description p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.modal-description ul {
+    padding-left: 20px;
+}
+
+.modal-description li {
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.modal-github {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.modal-github .modal-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+}

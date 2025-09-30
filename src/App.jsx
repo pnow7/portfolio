@@ -30,7 +30,7 @@ function App() {
         </section>
         <section id="contact" className="contact-section">
           <h2>Contact</h2>
-          <p>이메일: <a href="mailto:pnow7.dev@gmail.com">pnow7.dev@gmail.com</a></p>
+          <p>이메일: phyunjae7333@gmail.com</p>
           <a href="https://github.com/pnow7" target="_blank" rel="noopener noreferrer" className="github-btn">GitHub 바로가기</a>
         </section>
       </main>
