@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,6 +11,9 @@ function App() {
       <Header />
       <main>
         <section id="hero" className="hero-section">
+          {/* [추가] 블랙홀 배경 요소 */}
+          <div className="blackhole-bg"></div> 
+          {/*=========================*/}
           <div className="hero-flex">
             <div className="hero-stack">
               <span className="hero-animated-movie">Full-Stack</span>
@@ -35,7 +37,7 @@ function App() {
         <section id="contact" className="contact-section">
           <h2>Contact</h2>
           <p>이메일: phyunjae7333@gmail.com</p>
-          <a href="https://github.com/pnow7" target="_blank" rel="noopener noreferrer" className="github-btn">GitHub 바로가기</a>
+          <a href="https://github.com/pnow7" target="_blank" rel="noopener noreferrer" className="contact-link">GitHub</a>
         </section>
       </main>
       <Footer />

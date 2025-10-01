@@ -222,7 +222,7 @@ section {
 
 /* Contact Section */
 .contact-section {
-  background: #181818;
+  background: linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242);
   padding: 3rem 0 2.5rem 0;
   text-align: center;
   border-radius: 16px;
