@@ -15,7 +15,7 @@
 
 /* 모달 본문 컨테이너 */
 .modal-content {
-    background: #1e1e1e;
+    background: #ffffff; /* 모달 본문 배경을 흰색으로 변경 */
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     max-width: 800px;
@@ -50,11 +50,10 @@
 
 /* 모달 헤더 (제목 부분) */
 .modal-header {
-    color: #fff;
-    padding: 2.5rem 2rem 1.5rem;
+    padding: 2rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    text-align: left;
+    color: #fff; /* 헤더 텍스트는 흰색 유지 (그라데이션 위에) */
 }
 
 .team-badge-header {
@@ -76,16 +75,17 @@
 
 /* 모달 본문 (흰색 부분) */
 .modal-body {
-    background: #f8f8f8;
-    color: #333;
     padding: 2rem;
+    padding-top: 1rem;
+    background-color: #fcfcfc; /* 모달 바디 배경색 (거의 흰색) */
+    color: #333; /* 텍스트 색상을 어두운 색으로 변경 */
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
 /* 본문 내 마크다운 스타일 */
 .modal-description h3 {
-    color: #a78bfa;
+    color: #7c3aed; /* 보라색 계열로 변경 */
     margin-top: 25px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
@@ -95,12 +95,12 @@
 .modal-description p {
     line-height: 1.8;
     margin-bottom: 1rem;
-    color: #444;
+    color: #444; /* 텍스트 색상 조정 */
 }
 
 .modal-description li {
     margin-bottom: 8px;
-    color: #555;
+    color: #555; /* 텍스트 색상 조정 */
 }
 
 /* 기술 스택 섹션 */
@@ -109,7 +109,7 @@
 }
 
 .skills-section h3 {
-    color: #7c3aed;
+    color: #7c3aed; /* 진한 파란색 계열로 변경 */
     margin-top: 25px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
@@ -117,7 +117,7 @@
 }
 
 .skill-group h4 {
-    color: #555;
+    color: #333; /* 텍스트 색상 조정 */
     margin-top: 15px;
     margin-bottom: 8px;
     font-size: 1.1em;
@@ -131,12 +131,13 @@
 }
 
 .skill-item {
-    border-radius: 16px;
-    padding: 6px 12px;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
     font-size: 0.9em;
     font-weight: 500;
-    color: #181818;
-    transition: background-color 0.2s;
 }
 
 /* 기술 종류별 색상 */

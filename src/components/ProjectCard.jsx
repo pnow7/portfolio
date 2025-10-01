@@ -1,8 +1,13 @@
 import React from 'react';
 
 const ProjectCard = ({ project, onDetailsClick }) => {
+    // cardColor를 사용하여 카드 배경에 적용
+    const cardStyle = {
+        backgroundImage: project.cardColor,
+    };
+    
     return (
-        <div className="project-card">
+        <div className="project-card" style={cardStyle}> 
             {/* 카드 본문 (마우스 오버 시 가려짐) */}
             <div className="card-content">
                 <h3 className="project-title">{project.title}</h3>

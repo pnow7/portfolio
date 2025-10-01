@@ -184,7 +184,7 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 60vh;
-  background: linear-gradient(120deg, #181818 60%, #7c3aed 100%);
+  background: linear-gradient(135deg, rgba(24, 23, 23, 0.95), #57506b);
   position: relative;
 }
 .hero-center {
@@ -320,7 +320,7 @@ section {
 .about-section {
   max-width: 700px;
   margin: 0 auto;
-  background: #181818;
+  background: linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242);
   border-radius: 16px;
   padding: 2rem 1.5rem;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
@@ -414,20 +414,25 @@ section {
     margin-top: 2rem;
 }
 .project-card {
-    background: #181818;
+    position: relative;
+    background: #333333; 
+    /* 카드 본문 텍스트 색상을 밝게 유지 */
+    color: #f0f0f0; 
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     padding: 1.5rem;
-    text-align: left;
+    /* 그림자 색상도 어두운 배경에 맞게 조정 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
-    position: relative; /* 오버레이를 위해 상대 위치 설정 */
-    height: 300px; /* 카드의 높이 고정 */
-    overflow: hidden; /* 오버플로우 숨김 */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
 }
 .project-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(124,58,237,0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3); /* 보라색 계열로 강조 */
 }
 .skills {
   margin-top: 1rem;
@@ -670,27 +675,29 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(22, 22, 22, 0.9); /* 약간 어두운 반투명 배경 */
+    /* 기본 카드 색상과 비슷하게, 불투명도를 높인 회색으로 변경 */
+    background: rgba(50, 50, 50, 0.95); 
     backdrop-filter: blur(2px);
-    opacity: 0;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    /* 오버레이 텍스트 색상도 밝게 유지 */
+    color: #f0f0f0; 
 }
+
 
 .project-card:hover .card-overlay {
     opacity: 1;
 }
 
 .overlay-title {
-    color: #a78bfa;
-    font-size: 1.5rem;
+    /* 오버레이 제목 색상도 밝게 유지 */
+    color: #f0f0f0; 
     margin-bottom: 1rem;
-    font-weight: 700;
-    padding: 0 1rem;
 }
 
 .details-btn {
