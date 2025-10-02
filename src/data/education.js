@@ -25,7 +25,7 @@ const education = [
         description: "백준 알고리즘 사이트에서 매일 한 문제씩 알고리즘 문제를 풀며 꾸준히 문제 해결 능력을 키우고 있습니다.",
         // 변경된 색상: 은은한 퍼플 그레이 계열 그라데이션
         color: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
-        githubLink: "https://github.com/pnow7/algorithm-study"
+        githubLink: "https://github.com/pnow7/Java-Practice"
     },
 ];
 
