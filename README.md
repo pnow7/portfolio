@@ -1,12 +1,75 @@
-# React + Vite
+# 🚀 풀스택 개발자 박현재 (Pnow7) 포트폴리오
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"현재에 충실히, 사용자에게 유용한 가치를 만드는 개발자"
 
-Currently, two official plugins are available:
+[![배포 상태](https://img.shields.io/badge/Status-Deployed-success)](https://firstportpoliopnow7.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat&logo=github)](https://github.com/pnow7)
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 포트폴리오 바로가기
 
-## Expanding the ESLint configuration
+| 항목 | 링크 |
+| :--- | :--- |
+| **배포 사이트** | **[https://firstportpoliopnow7.vercel.app/](https://firstportpoliopnow7.vercel.app/)** |
+| **GitHub 저장소** | [https://github.com/pnow7/portfolio-repo](https://github.com/pnow7/portfolio-repo) ---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ 기술 스택 (Technical Stack)
+
+풀스택 환경에서 다양한 기술을 활용하며 프로젝트를 진행했습니다.
+
+### Frontend
+| 기술 | 설명 |
+| :--- | :--- |
+| **React** | SPA 구축 및 컴포넌트 기반 개발 |
+| **HTML/CSS** | 시맨틱 마크업 및 반응형 웹 디자인 |
+| **JSP** | Spring MVC 프로젝트에서 프론트엔드/뷰 영역 담당 |
+| **JavaScript** | 웹 인터랙션 및 비동기 처리 |
+
+### Backend & Database
+| 기술 | 설명 |
+| :--- | :--- |
+| **Java / Python** | 주요 백엔드 언어로 Spring Boot 및 FastAPI 환경 경험 |
+| **Spring Boot** | RESTful API 설계 및 개발 |
+| **Django** | Python 기반의 빠르고 안정적인 백엔드 구축 |
+| **Oracle DB / MySQL** | SQL 및 데이터베이스 설계, 관리 |
+
+### Collaboration & Tools
+| 기술 | 설명 |
+| :--- | :--- |
+| **Git & GitHub** | 협업 및 버전 관리 |
+| **IntelliJ / VS Code** | 주요 개발 환경 |
+| **Figma** | 와이어프레임 및 디자인 협업 |
+
+---
+
+## 💡 프로젝트 하이라이트
+
+포트폴리오에 있는 주요 프로젝트들을 간략하게 소개합니다. 자세한 내용은 배포 사이트를 참고해 주세요.
+
+### 1. 동해안 맛집 정보 공유 웹 서비스
+- **주요 기능:** 카카오맵 연동 맛집 추천, 사용자 리뷰 기반 **AI 요약 및 감성 분석** 기능 구현.
+- **담당 역할:** [README.md 파일 분석 기반] 맛집 정보/리뷰/스레드 기능 및 AI 연동 담당.
+- **사용 기술:** React, Python(FastAPI), Spring Boot, Oracle, Kakao Maps API, OpenAI API
+- **자세히 보기:** [프로젝트 GitHub 링크]
+
+### 2. 기업 스케줄 및 할일 관리 서비스
+- **주요 기능:** 숙박업체 운영 인력의 **객실 운영, 스케줄, 업무 배정 통합 관리** 시스템.
+- **담당 역할:** [README (1).md 파일 분석 기반] 객실 관리, 직원 관리, 업무 배정 로직 구현.
+- **사용 기술:** Spring Boot, JSP, Oracle Database, IntelliJ IDEA
+
+---
+
+## 👨‍💻 About Me
+
+> **"현재에 충실히 하는 신입 개발자"**
+>
+> 사용자 경험을 중시하며 문제를 해결하는 것에 즐거움을 느낍니다. 새로운 기술을 배우고 적용하는 것에 대한 열정이 높으며, 맡은 일에 대한 **책임감**을 가지고 팀과 **협업**하여 최상의 결과물을 만들어내겠습니다.
+>
+> **키워드:** #성장지향 #문제해결 #책임감 #협업 #꾸준함 #긍정적
+
+---
+
+## 📮 연락처
+
+- **Email:** `pnow7.dev@gmail.com`
+- **GitHub:** [https://github.com/pnow7](https://github.com/pnow7)
