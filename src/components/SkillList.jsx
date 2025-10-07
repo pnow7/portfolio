@@ -1,8 +1,6 @@
-// src/components/SkillList.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// AboutPage의 itemVariants를 prop으로 전달받아 사용합니다.
 const SkillList = ({ title, skills, itemVariants }) => (
     <div className="skills-col">
         <h4>{title}</h4>

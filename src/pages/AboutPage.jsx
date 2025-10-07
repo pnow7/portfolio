@@ -1,14 +1,11 @@
-// src/pages/AboutPage.jsx
 import React from "react";
 import { motion } from 'framer-motion'; 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import SkillList from "../components/SkillList"; // [수정] 새로 만든 컴포넌트 import
-import { hashtags, frontendSkills, backendSkills } from "../data/skills"; // [수정] 데이터 파일에서 import
+import SkillList from "../components/SkillList"; 
+import { hashtags, frontendSkills, backendSkills } from "../data/skills"; 
 import profileImage from "../assets/profile.jpg";
 
-// ... (containerVariants, itemVariants 정의는 그대로 유지)
-// 컨테이너 애니메이션 설정 (자식 요소에게 staggerChildren을 전달)
 const containerVariants = {
     initial: { opacity: 0, y: 50 },
     animate: {
@@ -29,7 +26,6 @@ const itemVariants = {
 };
 
 const AboutPage = ({ onlySection }) => {
-    // 기존에 있던 skill 데이터 배열(frontendSkills, backendSkills)은 skills.js로 이동하여 삭제되었습니다.
 
     const aboutSectionContent = (
         <motion.div 
@@ -57,11 +53,9 @@ const AboutPage = ({ onlySection }) => {
                             <motion.span key={tag} className="hashtag" variants={itemVariants}>{tag}</motion.span>
                         ))}
                     </div>
-                    {/* GitHub 버튼 등 다른 UI 요소 */}
-                    {/* ... (GitHub 버튼 JSX는 생략, 원본 파일 그대로 유지) ... */}
                 </motion.div>
 
-                {/* [수정] SkillList 컴포넌트를 사용하여 기술 스택 렌더링 */}
+                {/* SkillList 컴포넌트를 사용하여 기술 스택 렌더링 */}
                 <motion.div className="skills-area" variants={itemVariants}>
                     <h3>Skill &amp; Tools</h3>
                     <div className="skills-tools-grid">

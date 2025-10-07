@@ -1,4 +1,3 @@
-// src/components/EducationCard.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -15,9 +14,8 @@ const cardVariants = {
     })
 };
 
-// EducationPage.jsx에서 map으로 넘겨받는 하나의 education 객체를 prop으로 받습니다.
 const EducationCard = ({ item, index }) => {
-    // education.js의 color 속성을 배경으로 사용합니다.
+    // education.js의 color 속성을 배경으로 사용
     const cardStyle = {
         backgroundImage: item.color,
     };

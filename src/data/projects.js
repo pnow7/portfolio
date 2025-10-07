@@ -59,7 +59,7 @@ const projects = [
         },
         github: "https://github.com/Team-2Gether/Local7",
         team: "팀",
-        gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)', // 하늘-보라 그라데이션
+        gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)', 
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)', 
     },
 ];
