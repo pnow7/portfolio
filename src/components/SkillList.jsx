@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import "../styles/SkillList.css";
 
 const SkillList = ({ title, skills, itemVariants }) => (
     <div className="skills-col">

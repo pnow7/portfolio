@@ -1,0 +1,71 @@
+.education-card {
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: default;
+  padding: 1.5rem;
+  text-align: left;
+  color: #f0f0f0;
+  background: #2C2040;
+  overflow: hidden;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.edu-type-badge {
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.edu-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.edu-title {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+.github-icon-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.edu-period {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.edu-description {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.6;
+}

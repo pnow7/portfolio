@@ -19,17 +19,14 @@ const ProjectModal = ({ project, onClose }) => {
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <button className="modal-close-btn" onClick={onClose}>&times;</button>
                 
-                {/* 상단 헤더 부분 (그라데이션 적용) */}
                 <div className="modal-header" style={{ backgroundImage: project.gradientColors }}>
                     {project.team && <div className="team-badge-header">{project.team}</div>}
                     <h2>{project.title}</h2>
                 </div>
 
-                {/* 본문 내용 부분 (흰색 배경) */}
                 <div className="modal-body">
                     <div className="modal-description" dangerouslySetInnerHTML={{ __html: parseMarkdown(project.description) }} />
 
-                    {/* 기술 스택 섹션 */}
                     <div className="skills-section">
                         <h3>기술 스택</h3>
                         <div className="skills-list-container">

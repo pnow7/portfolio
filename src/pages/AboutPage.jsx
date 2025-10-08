@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import SkillList from "../components/SkillList"; 
 import { hashtags, frontendSkills, backendSkills } from "../data/skills"; 
 import profileImage from "../assets/profile.jpg";
+import "../styles/AboutPage.css";
 
 const containerVariants = {
     initial: { opacity: 0, y: 50 },
@@ -19,7 +20,6 @@ const containerVariants = {
     }
 };
 
-// 개별 아이템 애니메이션 설정
 const itemVariants = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -47,7 +47,6 @@ const AboutPage = ({ onlySection }) => {
                         사용자 경험과 효율적인 시스템 설계를 중요하게 생각하며,<br />
                         다양한 기술을 활용해 문제를 해결하는 것을 즐깁니다.
                     </p>
-                    {/* 해시태그 목록 */}
                     <div className="hashtag-list about-hashtags">
                         {hashtags.map(tag => (
                             <motion.span key={tag} className="hashtag" variants={itemVariants}>{tag}</motion.span>
@@ -55,7 +54,6 @@ const AboutPage = ({ onlySection }) => {
                     </div>
                 </motion.div>
 
-                {/* SkillList 컴포넌트를 사용하여 기술 스택 렌더링 */}
                 <motion.div className="skills-area" variants={itemVariants}>
                     <h3>Skill &amp; Tools</h3>
                     <div className="skills-tools-grid">

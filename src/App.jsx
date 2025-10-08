@@ -4,29 +4,24 @@ import Footer from "./components/Footer";
 import AboutSection from "./pages/AboutPage";
 import ProjectsSection from "./pages/ProjectsPage";
 import EducationSection from "./pages/EducationPage";
+import "./styles/Global.css";
 
 function App() {
     const [copyMessage, setCopyMessage] = useState(null);
-    const EMAIL_ADDRESS = "phyunjae7333@gmail.com"; // 이메일 주소를 변수로 정의
+    const EMAIL_ADDRESS = "phyunjae7333@gmail.com"; 
 
-    // [추가] 이메일 주소 복사 핸들러 함수
     const handleCopyEmail = (e) => {
-        // 1. <a> 태그의 기본 동작 (메일 클라이언트 열기) 방지
         e.preventDefault(); 
         
-        // 2. 클립보드에 텍스트 복사
         navigator.clipboard.writeText(EMAIL_ADDRESS)
             .then(() => {
-                // 3. 복사 성공 알림 메시지 설정
                 setCopyMessage("이메일 주소가 복사되었습니다!");
                 
-                // 4. 2초 후 메시지 제거
                 setTimeout(() => {
                     setCopyMessage(null);
                 }, 2000);
             })
             .catch(err => {
-                // 복사 실패 시
                 console.error('클립보드 복사 실패:', err);
                 setCopyMessage("복사 실패 (콘솔 확인)");
                 setTimeout(() => {
@@ -40,9 +35,7 @@ function App() {
       <Header />
       <main>
         <section id="hero" className="hero-section">
-          {/* [추가] 블랙홀 배경 요소 */}
           <div className="blackhole-bg"></div> 
-          {/*=========================*/}
           <div className="hero-flex">
             <div className="hero-stack">
               <span className="hero-animated-movie">Full-Stack</span>
@@ -60,21 +53,18 @@ function App() {
         <section id="projects">
           <ProjectsSection onlySection />
         </section>
-        <section id="education"> {/* 새로운 Education 섹션 추가 */}
+        <section id="education"> 
           <EducationSection onlySection />
         </section>
         <section id="contact" className="contact-section">
         <h2>Contact</h2>
-        {/* [수정] 이메일 주소를 아이콘과 링크로 변경 */}
           <p>
             <a 
-                href={`mailto:${EMAIL_ADDRESS}`} // href는 이메일 주소로 유지하되
+                href={`mailto:${EMAIL_ADDRESS}`} 
                 className="contact-link email-link" 
                 aria-label="이메일 주소 복사"
-                // [수정] 클릭 시 handleCopyEmail 함수 실행
                 onClick={handleCopyEmail} 
             >
-                {/* 이메일(봉투) 아이콘 SVG 유지 */}
                 <svg 
                     width="20" 
                     height="20" 
@@ -84,13 +74,10 @@ function App() {
                 >
                     <path d="M2.003 5.884l7.85-4.856a2.002 2.002 0 012.3 0l7.85 4.856C21.43 6.138 22 6.945 22 8v12a2 2 0 01-2 2H4a2 2 0 01-2-2V8c0-1.055.57-1.862 1.003-2.116zM20 8v.2l-8 4.96L4 8.2V8l8 4.96L20 8z"/>
                 </svg>
-                {/* 이메일 주소 표시 */}
                 {EMAIL_ADDRESS}
             </a>
         </p>
-        {/* GitHub 링크는 기존처럼 유지 (contact-link 클래스를 사용한다고 가정) */}
         <a href="https://github.com/pnow7" target="_blank" rel="noopener noreferrer" className="contact-link">
-            {/* GitHub 아이콘 SVG 추가 (AboutPage에서 사용된 아이콘 재사용) */}
             <svg 
                 width="20" 
                 height="20" 

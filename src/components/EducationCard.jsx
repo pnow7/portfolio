@@ -1,21 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import "../styles/EducationCard.css";
 
-// 개별 카드 애니메이션 Variants (순차적인 등장 효과)
 const cardVariants = {
     initial: { opacity: 0, y: 20 },
     animate: i => ({
         opacity: 1,
         y: 0,
         transition: {
-            delay: i * 0.1, // index에 따라 0.1초씩 지연
+            delay: i * 0.1, 
             duration: 0.6,
         }
     })
 };
 
 const EducationCard = ({ item, index }) => {
-    // education.js의 color 속성을 배경으로 사용
     const cardStyle = {
         backgroundImage: item.color,
     };
@@ -27,8 +26,8 @@ const EducationCard = ({ item, index }) => {
             variants={cardVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: false, amount: 0.5 }} // 카드의 50%가 보일 때 애니메이션 실행
-            custom={index} // 순차적 애니메이션을 위한 index 전달
+            viewport={{ once: false, amount: 0.5 }} 
+            custom={index} 
         >
             <div className="card-content">
                 <span className="edu-type-badge">{item.type}</span>
@@ -36,7 +35,6 @@ const EducationCard = ({ item, index }) => {
                     <h3 className="edu-title">{item.institution}</h3>
                     {item.githubLink && (
                         <a href={item.githubLink} target="_blank" rel="noopener noreferrer" className="github-icon-link" aria-label="교육 관련 GitHub 저장소">
-                            {/* GitHub 아이콘 SVG 대신 간결한 이미지 사용 */}
                             <img 
                                 src="https://www.vectorlogo.zone/logos/github/github-tile.svg" 
                                 alt="GitHub" 
