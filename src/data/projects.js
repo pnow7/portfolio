@@ -30,6 +30,7 @@ const projects = [
         team: "팀",
         gradientColors: 'linear-gradient(135deg, #FF6B6B, #F9D423)', // 주황-노랑 그라데이션
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)', 
+        cardTechs: ["JSP", "Spring Boot", "Oracle"],
     },
     {
         id: 2,
@@ -61,6 +62,7 @@ const projects = [
         team: "팀",
         gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)', 
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)', 
+        cardTechs: ["React", "Spring Boot", "Oracle DB", "OpenAI"],
     },
 ];
 

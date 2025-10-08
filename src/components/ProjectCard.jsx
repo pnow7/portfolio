@@ -71,6 +71,12 @@ const ProjectCard = ({ project, onDetailsClick }) => {
                 <p className="project-summary">{project.summary}</p>
                 <div className="project-badges">
                     {project.team && <span className="project-team-badge">{project.team}</span>}
+                    
+                    {project.cardTechs && project.cardTechs.map((tech, i) => (
+                        <span key={i} className="project-skill-badge">
+                            {tech}
+                        </span>
+                    ))}
                 </div>
             </div>
         </div>
