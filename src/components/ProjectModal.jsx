@@ -5,13 +5,43 @@ const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
     const parseMarkdown = (markdown) => {
-        let html = markdown;
-        html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        let html = markdown.trim(); 
+
         html = html.replace(/###\s(.*?)\n/g, '<h3>$1</h3>');
         html = html.replace(/^- (.*)/gm, '<li>$1</li>');
-        html = html.replace(/\n\n/g, '</p><p>');
-        html = html.replace(/\n/g, '<br />');
-        return `<p>${html}</p>`;
+        html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        
+        const lines = html.split('\n');
+        let processedHtml = '';
+        let paragraph = '';
+
+        lines.forEach(line => {
+            line = line.trim();
+            if (line.startsWith('<h3>') || line.startsWith('<li>') || line.startsWith('<strong>')) {
+                if (paragraph) {
+                    processedHtml += `<p>${paragraph}</p>`;
+                    paragraph = '';
+                }
+                processedHtml += line;
+            } else if (line === '') {
+                if (paragraph) {
+                    processedHtml += `<p>${paragraph}</p>`;
+                    paragraph = '';
+                }
+            } else {
+                if (paragraph) {
+                    paragraph += ' ' + line;
+                } else {
+                    paragraph = line;
+                }
+            }
+        });
+
+        if (paragraph) {
+            processedHtml += `<p>${paragraph}</p>`;
+        }
+
+        return processedHtml;
     };
 
     return (

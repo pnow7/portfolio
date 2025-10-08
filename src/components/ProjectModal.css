@@ -5,29 +5,30 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85); /* 배경을 더 어둡게 */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px); /* 블러 강도 증가 */
 }
 
-/* 모달 본문 컨테이너 */
+/* 모달 본문 컨테이너 - 어두운 배경으로 변경 */
 .modal-content {
-    background: #ffffff; 
+    background: #2C2040; /* 카드와 동일한 어두운 배경색 */
     border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.7); /* 보라색 네온 효과 추가 */
+    border: 1px solid rgba(124, 58, 237, 0.4); /* 얇은 테두리 추가 */
     max-width: 800px;
     max-height: 95vh;
     overflow-y: auto;
     position: relative;
-    animation: fadeIn 0.3s ease-out;
+    animation: fadeIn 0.4s ease-out; /* 애니메이션 속도 조정 */
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 /* 닫기 버튼 스타일 */
@@ -37,23 +38,38 @@
     right: 15px;
     background: none;
     border: none;
-    font-size: 2rem;
-    color: #fff;
+    font-size: 2.5rem; /* 버튼 크기 키움 */
+    color: #f0f0f0; /* 밝은 색으로 변경 */
     cursor: pointer;
     transition: color 0.2s;
     z-index: 10;
+    text-shadow: 0 0 5px rgba(124, 58, 237, 0.8); /* 네온 효과 추가 */
 }
 
 .modal-close-btn:hover {
     color: #a78bfa;
 }
 
+/* 스크롤바 스타일링 (선택 사항: 모던한 스크롤바) */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #7c3aed;
+    border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-track {
+    background: #362952;
+}
+
 /* 모달 헤더 (제목 부분) */
 .modal-header {
-    padding: 2rem;
+    padding: 2.5rem 2rem; /* 패딩 증가 */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     color: #fff; 
+    border-bottom: 2px solid #7c3aed; /* 보라색 하단 구분선 */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 */
 }
 
 .team-badge-header {
@@ -64,108 +80,131 @@
     font-weight: 700;
     display: inline-block;
     margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.5); /* 배지 네온 효과 */
 }
 
 .modal-header h2 {
     color: #fff;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em; /* 폰트 크기 키움 */
     font-weight: 800;
+    line-height: 1.2;
 }
 
-/* 모달 본문 (흰색 부분) */
+/* 모달 본문 (흰색 부분 -> 어두운 부분으로 변경) */
 .modal-body {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     padding-top: 1rem;
-    background-color: #fcfcfc; 
-    color: #333;
+    background-color: #2C2040; /* 본문 배경도 카드와 동일하게 설정 */
+    color: #f0f0f0; /* 텍스트 색상을 밝게 */
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
 /* 본문 내 마크다운 스타일 */
 .modal-description h3 {
-    color: #7c3aed;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+    color: #a78bfa; /* 보라색 하이라이트 */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.3); /* 연한 보라색 구분선 */
+    padding-bottom: 8px;
+    font-size: 1.6em;
+    font-weight: 700;
 }
 
 .modal-description p {
     line-height: 1.8;
-    margin-bottom: 1rem;
-    color: #444; 
+    margin-bottom: 1.2rem;
+    color: #ccc; /* 텍스트 색상 조정 */
 }
 
 .modal-description li {
-    margin-bottom: 8px;
-    color: #555; 
+    margin-bottom: 10px;
+    color: #ccc; 
+    list-style-type: '⚡ '; /* 리스트 스타일 아이콘 변경 */
+    padding-left: 5px;
 }
 
 /* 기술 스택 섹션 */
 .skills-section {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
 .skills-section h3 {
-    color: #7c3aed;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+    color: #a78bfa; /* 보라색 하이라이트 */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+    padding-bottom: 8px;
+    font-size: 1.6em;
+    font-weight: 700;
 }
 
 .skill-group h4 {
-    color: #333;
-    margin-top: 15px;
-    margin-bottom: 8px;
-    font-size: 1.1em;
+    color: #fff; /* 그룹 제목을 흰색으로 강조 */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 /* 기술 스택 배지 스타일 */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px; /* 간격 증가 */
 }
 
 .skill-item {
     display: inline-block;
-    padding: 4px 10px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
     font-size: 0.9em;
-    font-weight: 500;
+    font-weight: 600;
+    color: #1e1e1e; /* 텍스트는 어둡게 */
+    transition: transform 0.2s;
 }
 
-/* 기술 종류별 색상 */
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.5);
+}
+
+/* 기술 종류별 색상 - 카드 스타일과 통일감 */
 .skill-item.frontend {
-    background: #ab7cfd;; 
+    background: #4ade80; /* 밝은 녹색 */
 }
 
 .skill-item.backend {
-    background: #ab7cfd;; 
+    background: #60a5fa; /* 밝은 파랑 */
 }
 
 .skill-item.tools {
-    background: #ab7cfd;;
+    background: #facc15; /* 밝은 노랑 */
 }
 
 /* GitHub 링크 스타일 */
 .modal-github {
-    margin-top: 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
+    background: #362952; /* 배경색 추가 */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top: 1px solid rgba(124, 58, 237, 0.3);
 }
 
 .modal-link {
-    color: #7c3aed;
+    color: #a78bfa; /* 보라색 하이라이트 */
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
     transition: color 0.2s;
+    display: inline-block;
 }
 
 .modal-link:hover {
-    color: #a78bfa;
+    color: #fff;
+    text-shadow: 0 0 10px #a78bfa; /* 링크 네온 효과 */
 }
