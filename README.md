@@ -71,5 +71,5 @@
 
 ## 📮 연락처
 
-- **Email:** `pnow7.dev@gmail.com`
+- **Email:** `phyunjae7333@gmail.com`
 - **GitHub:** [https://github.com/pnow7](https://github.com/pnow7)
