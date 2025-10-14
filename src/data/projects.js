@@ -28,7 +28,8 @@ const projects = [
         },
         github: "https://github.com/Team-MobyDick/hms",
         team: "팀",
-        gradientColors: 'linear-gradient(135deg, #FF6B6B, #F9D423)', // 주황-노랑 그라데이션
+        duration: "25.06.10 ~ 25.06.27",
+        gradientColors: 'linear-gradient(135deg, #FF6B6B, #F9D423)', 
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)', 
         cardTechs: ["JSP", "Spring Boot", "Oracle"],
     },
@@ -60,6 +61,7 @@ const projects = [
         },
         github: "https://github.com/Team-2Gether/Local7",
         team: "팀",
+        duration: "25.07.07 ~ 25.07.28",
         gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)', 
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)', 
         cardTechs: ["React", "Spring Boot", "Oracle DB", "OpenAI"],

@@ -60,7 +60,7 @@
   line-height: 1.7;
 }
 
-/* 900px 미만 미디어 쿼리 통합 */
+
 @media (max-width: 900px) {
   .hero-desc {
     font-size: 1.1rem;
@@ -139,7 +139,7 @@
     text-shadow: 0 12px 48px rgba(0,0,0,0.18);
   }
 }
-/* Hero Section */
+
 .hero-section {
   display: flex;
   align-items: center;
@@ -223,7 +223,7 @@ section {
   font-weight: 700;
 }
 
-/* Contact Section */
+
 .contact-section {
   background: linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242);
   padding: 3rem 0 2.5rem 0;
@@ -243,7 +243,7 @@ section {
   text-decoration: underline;
 }
 
-/* 버튼 */
+
 .contact-btn {
   display: inline-block;
   margin-top: 2rem;
@@ -262,7 +262,7 @@ section {
   color: #181818;
 }
 
-/* 별빛 배경 */
+
 body {
   background-color: #242424; 
   background-attachment: fixed; 

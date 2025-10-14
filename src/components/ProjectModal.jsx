@@ -52,6 +52,7 @@ const ProjectModal = ({ project, onClose }) => {
                 <div className="modal-header" style={{ backgroundImage: project.gradientColors }}>
                     {project.team && <div className="team-badge-header">{project.team}</div>}
                     <h2>{project.title}</h2>
+                    {project.duration && <div className="modal-duration">🗓️ {project.duration}</div>}
                 </div>
 
                 <div className="modal-body">
