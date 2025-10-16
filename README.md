@@ -33,7 +33,7 @@
 | **Django** | Python 기반의 빠르고 안정적인 백엔드 구축 |
 | **Oracle DB / MySQL** | SQL 및 데이터베이스 설계, 관리 |
 
-### Collaboration & Tools
+### Tools
 | 기술 | 설명 |
 | :--- | :--- |
 | **Git & GitHub** | 협업 및 버전 관리 |
