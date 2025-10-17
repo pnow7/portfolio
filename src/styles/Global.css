@@ -40,7 +40,7 @@
   font-weight: 700;
   z-index: 2;
   opacity: 0;
-  animation: introFadeIn 1.2s 0.2s forwards;
+  animation: introFadeIn 1.5s 0.2s forwards;
   white-space: nowrap;
 }
 
@@ -94,6 +94,9 @@
   padding: 0 16px;
   line-height: 1.7;
   color: #e0e0e0;
+  will-change: transform, filter, opacity;
+  opacity: 0;
+  animation: introFadeIn 1.5s 0.5s forwards;
 }
 
 @media (max-width: 900px) {
