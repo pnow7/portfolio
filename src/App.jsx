@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import AboutSection from "./pages/AboutPage";
 import ProjectsSection from "./pages/ProjectsPage";
 import EducationSection from "./pages/EducationPage";
-import "./styles/Global.css";
+import "./App.css";
 
 function App() {
   const [copyMessage, setCopyMessage] = useState(null);
