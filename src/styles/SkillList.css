@@ -32,6 +32,7 @@
     margin: 0 auto;
     max-width: 100%;
     overflow-x: auto; 
+    z-index: 10;
     -webkit-overflow-scrolling: none; 
     scrollbar-width: none; 
     -ms-overflow-style: none; 
