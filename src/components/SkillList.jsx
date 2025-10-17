@@ -16,7 +16,7 @@ const SkillList = ({ title, skills, itemVariants }) => (
 				<motion.li
 					key={skill.name}
 					variants={itemVariants}
-					whileTap={{ scale: 0.95 }}
+					whileTap={{ scale: 0.95, zIndex: 999 }}
 				>
 					<img
 						src={skill.icon}
