@@ -44,6 +44,7 @@
 
 
 .skills-list li {
+    position: relative;
     background: #342f3b; 
     border: 1px solid #4a4452;
     border-radius: 15px; 
