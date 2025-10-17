@@ -1,19 +1,19 @@
 // 새로고침 시 항상 최상단으로 이동
-window.addEventListener('beforeunload', () => {
+window.addEventListener("beforeunload", () => {
   window.scrollTo(0, 0);
 });
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   const y = window.scrollY;
-  document.body.style.setProperty('--star-bg-pos', `0px ${y * 0.2}px`);
+  document.body.style.setProperty("--star-bg-pos", `0px ${y * 0.2}px`);
 });
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);
