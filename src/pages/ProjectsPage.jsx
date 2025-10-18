@@ -56,25 +56,12 @@ const ProjectsPage = ({ onlySection }) => {
 
 
     return (
-        onlySection ? (
-            <div>
-                {sectionContent}
-                {isModalOpen && (
-                    <ProjectModal project={selectedProject} onClose={closeModal} />
-                )}
-            </div>
-        ) : (
-            <>
-                <Header />
-                <main>
-                    {sectionContent} {}
-                </main>
-                <Footer />
-                {isModalOpen && (
-                    <ProjectModal project={selectedProject} onClose={closeModal} />
-                )}
-            </>
-        )
+        <>
+            {sectionContent}
+            {isModalOpen && (
+                <ProjectModal project={selectedProject} onClose={closeModal} />
+            )}
+        </>
     );
 };
 

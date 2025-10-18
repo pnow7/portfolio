@@ -65,17 +65,7 @@ const AboutPage = ({ onlySection }) => {
         </motion.div>
     );
 
-    return onlySection ? (
-        aboutSectionContent
-    ) : (
-        <>
-            <Header />
-            <main>
-                {aboutSectionContent}
-            </main>
-            <Footer />
-        </>
-    );
+    return aboutSectionContent
 };
 
 export default AboutPage;

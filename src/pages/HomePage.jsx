@@ -1,11 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import "../styles/HomePage.css";
 
 const HomePage = () => (
 	<>
-		<Header />
 		<main>
 			<section className="intro-section">
 				<img
@@ -19,7 +16,6 @@ const HomePage = () => (
 				<a href="#contact" className="contact-btn">연락하기</a>
 			</section>
 		</main>
-		<Footer />
 	</>
 );
 
