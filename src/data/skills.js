@@ -3,6 +3,7 @@ const frontendSkills = [
     { name: "HTML", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" },
     { name: "CSS", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" },
     { name: "JSP", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" },
+    { name: "Figma", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" },
 ];
 
 const backendSkills = [
@@ -16,16 +17,8 @@ const backendSkills = [
     { name: "SQL Developer", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" },
 ];
 
-const toolsSkills = [
-    { name: "Figma", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" },
-    { name: "Git", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" },
-    { name: "GitHub", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" },
-    { name: "VS Code", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" },
-    { name: "IntelliJ IDEA", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" },
-];
-
 const hashtags = [
     "#성장지향", "#문제해결", "#책임감", "#협업", "#꾸준함", "#긍정적", "#도전", "#유연함"
 ];
 
-export { frontendSkills, backendSkills, toolsSkills, hashtags };
+export { frontendSkills, backendSkills, hashtags };
