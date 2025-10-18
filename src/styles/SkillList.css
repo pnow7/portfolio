@@ -14,10 +14,10 @@
 .skills-col h4::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 120px;
     height: 3px;
     background: #6a0dad; 
-    margin: 8px auto 0;
+    margin: 4px auto 0;
     border-radius: 5px;
 }
 

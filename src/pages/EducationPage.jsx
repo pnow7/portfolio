@@ -21,7 +21,8 @@ const EducationPage = ({ onlySection }) => {
         onlySection ? (
             <motion.section 
                 className="education-section" 
-                {...sectionProps}
+                // sectionProps 객체 한번에 호출
+                {...sectionProps}           
             >
                 <h2 className="section-title">Education</h2>
                 <div className="education-list">

@@ -3,19 +3,18 @@ import { motion } from 'framer-motion';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SkillList from "../components/SkillList"; 
-import { hashtags, frontendSkills, backendSkills } from "../data/skills"; 
+import { hashtags, frontendSkills, backendSkills, toolsSkills } from "../data/skills"; 
 import profileImage from "../assets/profile.jpg";
 import "../styles/AboutPage.css";
 
 const containerVariants = {
     initial: { opacity: 0, y: 50 },
-    animate: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            when: "beforeChildren",
-            staggerChildren: 0.15,
-            duration: 0.8
+    animate: { opacity: 1, y: 0,
+        transition: { 
+            when: "beforeChildren", 
+            staggerChildren: 0.15, 
+            duration: 0.8, 
+            delay: 0.3
         }
     }
 };
@@ -59,6 +58,7 @@ const AboutPage = ({ onlySection }) => {
                     <div className="skills-tools-grid">
                         <SkillList title="Frontend" skills={frontendSkills} itemVariants={itemVariants} />
                         <SkillList title="Backend" skills={backendSkills} itemVariants={itemVariants} />
+                        <SkillList title="Tools" skills={toolsSkills} itemVariants={itemVariants} />
                     </div>
                 </motion.div>
             </section>

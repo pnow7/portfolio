@@ -247,7 +247,7 @@ body::before {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
-  background: #242424;
+  background: linear-gradient(180deg, rgba(44, 39, 39, 0.95), #110e1b);
   text-align: center;
   overflow-x: hidden;
 }
