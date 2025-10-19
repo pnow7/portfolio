@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CursorParticles from "./components/CursorParticles";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutSection from "./pages/AboutPage";
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <>
+      <CursorParticles />
       <Header />
       <main>
         <section id="hero" className="hero-section">
