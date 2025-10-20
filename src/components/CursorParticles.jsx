@@ -4,6 +4,7 @@ const CursorParticles = () => {
     const canvasRef = useRef(null);
     const particles = useRef([]);
     const mousePosition = useRef({ x: 0, y: 0 });
+    const lastEmittedPosition = useRef({ x: 0, y: 0 });
 
     // 캔버스 초기화 및 파티클 관리
     const initCanvasAndListeners = useCallback((canvas) => {
@@ -71,9 +72,6 @@ const CursorParticles = () => {
             draw(ctx) { 
                 ctx.save();
                 ctx.globalAlpha = this.alpha;
-                
-                // 이 부분이 원하는 모양을 그리는 코드로 변경됩니다.
-                // 예: 원
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 3, false);
                 ctx.fillStyle = this.color;
@@ -94,16 +92,23 @@ const CursorParticles = () => {
             // 잔상이 남지 않도록 캔버스 전체를 투명하게 지움
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+            const currentMouseX = mousePosition.current.x;
+            const currentMouseY = mousePosition.current.y;
+            const hasMouseMoved = currentMouseX !== lastEmittedPosition.current.x || currentMouseY !== lastEmittedPosition.current.y;
+
             // 일정 간격마다 파티클 생성
             const now = Date.now();
-            if (now - lastEmit > emitInterval) {
+            if (now - lastEmit > emitInterval && hasMouseMoved) {
                 lastEmit = now;
+
+                lastEmittedPosition.current = { x: currentMouseX, y: currentMouseY };
+                
                 // 마우스 위치에서 3-5개의 파티클 생성
                 for (let i = 0; i < Math.floor(Math.random() * 1) + 1; i++) {
                     particles.current.push(
                         new Particle(
-                            mousePosition.current.x,
-                            mousePosition.current.y
+                            currentMouseX,
+                            currentMouseY
                         )
                     );
                 }
