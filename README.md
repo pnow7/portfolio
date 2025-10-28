@@ -13,7 +13,7 @@
 | **배포 사이트** | **[https://firstportpoliopnow7.vercel.app/](https://firstportpoliopnow7.vercel.app/)** |
 | **GitHub 저장소** | [https://github.com/pnow7/portfolio-repo](https://github.com/pnow7/portfolio-repo) ---
 
-## 🛠️ 기술 스택 (Technical Stack)
+## 🛠️ 프로젝트 기술 스택 (Projects Technical Stack)
 
 풀스택 환경에서 다양한 기술을 활용하며 프로젝트를 진행했습니다.
 
