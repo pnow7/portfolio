@@ -1,6 +1,6 @@
 # 🚀 풀스택 개발자 박현재 (Pnow7) 포트폴리오
 
-"현재에 충실히, 사용자에게 유용한 가치를 만드는 개발자"
+"**현재에 충실히, 사용자에게 유용한 가치를 만드는 개발자**"
 
 [![배포 상태](https://img.shields.io/badge/Status-Deployed-success)](https://firstportpoliopnow7.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat&logo=github)](https://github.com/pnow7)
@@ -11,7 +11,9 @@
 | 항목 | 링크 |
 | :--- | :--- |
 | **배포 사이트** | **[https://firstportpoliopnow7.vercel.app/](https://firstportpoliopnow7.vercel.app/)** |
-| **GitHub 저장소** | [https://github.com/pnow7/portfolio-repo](https://github.com/pnow7/portfolio-repo) ---
+| **GitHub 저장소** | [https://github.com/pnow7/portfolio-repo](https://github.com/pnow7/portfolio-repo) |
+
+---
 
 ## 🛠️ 프로젝트 기술 스택 (Projects Technical Stack)
 
@@ -21,22 +23,21 @@
 | 기술 | 설명 |
 | :--- | :--- |
 | **React** | SPA 구축 및 컴포넌트 기반 개발 |
-| **HTML/CSS** | 시맨틱 마크업 및 반응형 웹 디자인 |
+| **HTML/CSS/JS** | 시맨틱 마크업, 반응형 웹 디자인 및 웹 인터랙션/비동기 처리 |
 | **JSP** | Spring MVC 프로젝트에서 프론트엔드/뷰 영역 담당 |
-| **JavaScript** | 웹 인터랙션 및 비동기 처리 |
 
 ### Backend & Database
 | 기술 | 설명 |
 | :--- | :--- |
-| **Java / Python** | 주요 백엔드 언어로 Spring Boot 및 FastAPI 환경 경험 |
-| **Spring Boot** | RESTful API 설계 및 개발 |
-| **Django** | Python 기반의 빠르고 안정적인 백엔드 구축 |
+| **Java (Spring Boot)** | **RESTful API 설계 및 개발**, 서버 구축의 핵심 언어 |
+| **Python (FastAPI, Django)** | **AI 서버 연동** 및 Python 기반의 빠르고 안정적인 백엔드 구축 경험 |
 | **Oracle DB / MySQL** | SQL 및 데이터베이스 설계, 관리 |
 
-### Tools
+### Tools & DevOps
 | 기술 | 설명 |
 | :--- | :--- |
-| **Git & GitHub** | 협업 및 버전 관리 |
+| **Git & GitHub** | 협업 및 버전 관리 (Git FLOW 기반) |
+| **Google Cloud Storage (GCS)** | 팀 단위 이미지 관리 서비스화 및 인프라 구축 |
 | **IntelliJ / VS Code** | 주요 개발 환경 |
 | **Figma** | 와이어프레임 및 디자인 협업 |
 
@@ -44,19 +45,31 @@
 
 ## 💡 프로젝트 하이라이트
 
-포트폴리오에 있는 주요 프로젝트들을 간략하게 소개합니다. 자세한 내용은 배포 사이트를 참고해 주세요.
+사용자 경험(UX)과 기술적 효율성을 중시한 주요 프로젝트들을 소개합니다. 자세한 내용은 배포 사이트를 참고해 주세요.
 
-### 1. 기업 스케줄 및 할일 관리 서비스 (25.06.10 ~ 25.06.27)
-- **주요 기능:** 숙박업체 운영 인력의 **객실 운영, 스케줄, 업무 배정 통합 관리** 시스템.
-- **담당 역할:** 객실 관리, 직원 관리, 업무 배정 로직 구현.
-- **사용 기술:** Spring Boot, JSP, Oracle Database, IntelliJ IDEA
-- **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/Team-MobyDick/hms)
-- 
-### 2. 동해안 맛집 정보 공유 웹 서비스 (25.07.07 ~ 25.07.28)
-- **주요 기능:** 카카오맵 연동 맛집 추천, 사용자 리뷰 기반 **AI 요약 및 감성 분석** 기능 구현.
-- **담당 역할:** 맛집 정보/리뷰/스레드 기능 및 AI 연동 담당.
-- **사용 기술:** React, Python(FastAPI), Spring Boot, Oracle, Kakao Maps API, OpenAI API
-- **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/Team-2Gether/Local7)
+### 1. 🤖 AI 활용 체험 게임 플랫폼: 겜만중 (25.10.02 ~ 25.10.28)
+* **주요 기능:** 사용자의 이미지 및 프롬프트를 기반으로 **DALL·E 3를 활용하여 캐릭터를 생성**하는 AI 체험 게임 플랫폼.
+* **담당 역할:** **AI 이미지 생성 모델 구현 및 최적화**, **JWT 기반 인증/보안 시스템**, GCS 연동 이미지 관리 서비스, 관리자 페이지 등 **풀스택 개발 전반** 담당.
+* **핵심 성과:**
+    * 초기 Stable Diffusion의 한계를 극복하고 **DALL·E 3로 전환**, 이미지 생성 시간을 **20초 이내로 단축**하여 서비스 효율성을 대폭 개선.
+    * `GcsService` 구현을 통한 이미지 관리 로직 표준화 및 팀 협업 환경 구축.
+* **사용 기술:** **Spring Boot, FastAPI, DALL·E 3, YOLOv8, JWT, React, GCS**
+ 
+---
+
+### 2. 🍽️ 동해안 맛집 정보 공유 웹 서비스 (25.07.07 ~ 25.07.28)
+* **주요 기능:** 카카오맵 연동 맛집 추천, 사용자 리뷰 기반 **AI 요약 및 감성 분석** 기능 구현.
+* **담당 역할:** 맛집 정보/리뷰/스레드 기능 및 **AI (OpenAI API) 연동** 담당.
+* **사용 기술:** React, Python(FastAPI), Spring Boot, Oracle, Kakao Maps API, OpenAI API
+* **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/Team-2Gether/Local7)
+
+---
+
+### 3. 🏨 기업 스케줄 및 할일 관리 서비스 (25.06.10 ~ 25.06.27)
+* **주요 기능:** 숙박업체 운영 인력의 **객실 운영, 스케줄, 업무 배정 통합 관리** 시스템.
+* **담당 역할:** 객실 관리, 직원 관리, 업무 배정 로직 구현.
+* **사용 기술:** Spring Boot, JSP, Oracle Database, IntelliJ IDEA
+* **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/Team-MobyDick/hms)
 
 ---
 
