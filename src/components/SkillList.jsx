@@ -4,7 +4,7 @@ import "../styles/SkillList.css";
 
 const SkillList = ({ title, skills, itemVariants }) => (
 	<div className="skills-col">
-	
+
 		<h4>{title}</h4>
 
 		<motion.ul
@@ -21,7 +21,7 @@ const SkillList = ({ title, skills, itemVariants }) => (
 					<img
 						src={skill.icon}
 						alt={`${skill.name} 아이콘`}
-						title={skill.name} 
+						title={skill.name}
 						className="skill-icon-img"
 					/>
 				</motion.li>

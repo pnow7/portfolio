@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
@@ -36,18 +36,18 @@ const ProjectsPage = ({ onlySection }) => {
 
 
     const sectionContent = (
-        <motion.section 
+        <motion.section
             className="projects-section"
             {...sectionProps}
         >
             <h2 className="section-title">My Projects</h2>
             <div className="projects-list">
-                {projectsData.map((project, index) => ( 
+                {projectsData.map((project, index) => (
                     <ProjectCard
                         key={project.id}
                         project={project}
                         onDetailsClick={openModal}
-                        index={index} 
+                        index={index}
                     />
                 ))}
             </div>

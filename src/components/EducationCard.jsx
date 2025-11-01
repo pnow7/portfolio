@@ -8,7 +8,7 @@ const cardVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: i * 0.1, 
+            delay: i * 0.1,
             duration: 0.6,
         }
     })
@@ -20,14 +20,14 @@ const EducationCard = ({ item, index }) => {
     };
 
     return (
-        <motion.div 
-            className="education-card" 
-            style={cardStyle} 
+        <motion.div
+            className="education-card"
+            style={cardStyle}
             variants={cardVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: false, amount: 0.5 }} 
-            custom={index} 
+            viewport={{ once: false, amount: 0.5 }}
+            custom={index}
         >
             <div className="card-content">
                 <span className="edu-type-badge">{item.type}</span>
@@ -35,9 +35,9 @@ const EducationCard = ({ item, index }) => {
                     <h3 className="edu-title">{item.institution}</h3>
                     {item.githubLink && (
                         <a href={item.githubLink} target="_blank" rel="noopener noreferrer" className="github-icon-link" aria-label="교육 관련 GitHub 저장소">
-                            <img 
-                                src="https://www.vectorlogo.zone/logos/github/github-tile.svg" 
-                                alt="GitHub" 
+                            <img
+                                src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+                                alt="GitHub"
                                 className="github-icon"
                             />
                         </a>

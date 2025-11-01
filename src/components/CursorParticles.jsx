@@ -35,7 +35,7 @@ const CursorParticles = () => {
 
                 // const lightness = Math.random() * 20 + 75;
                 // this.color = `hsl(0, 5%, ${lightness}%)`;
-                
+
                 const hue = Math.random() * 360;    // 0 ~ 360까지 무지개색 전체 범위
                 const saturation = 90;              // 90% 이상의 높은 채도로 쨍하게 만듦
                 const lightness = 70;               // 70% 이상의 높은 명도로 밝게 만듦
@@ -69,14 +69,14 @@ const CursorParticles = () => {
             //     ctx.restore();
             // }
 
-            draw(ctx) { 
+            draw(ctx) {
                 ctx.save();
                 ctx.globalAlpha = this.alpha;
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 3, false);
                 ctx.fillStyle = this.color;
                 ctx.fill();
-                
+
                 ctx.restore();
             }
         }
@@ -102,7 +102,7 @@ const CursorParticles = () => {
                 lastEmit = now;
 
                 lastEmittedPosition.current = { x: currentMouseX, y: currentMouseY };
-                
+
                 // 마우스 위치에서 3-5개의 파티클 생성
                 for (let i = 0; i < Math.floor(Math.random() * 1) + 1; i++) {
                     particles.current.push(

@@ -1,17 +1,18 @@
 import React from "react";
-import { motion } from 'framer-motion'; 
-import SkillList from "../components/SkillList"; 
-import { hashtags, frontendSkills, backendSkills } from "../data/skills"; 
+import { motion } from 'framer-motion';
+import SkillList from "../components/SkillList";
+import { hashtags, frontendSkills, backendSkills } from "../data/skills";
 import profileImage from "../assets/profile.jpg";
 import "../styles/AboutPage.css";
 
 const containerVariants = {
     initial: { opacity: 0, y: 50 },
-    animate: { opacity: 1, y: 0,
-        transition: { 
-            when: "beforeChildren", 
-            staggerChildren: 0.15, 
-            duration: 0.8, 
+    animate: {
+        opacity: 1, y: 0,
+        transition: {
+            when: "beforeChildren",
+            staggerChildren: 0.15,
+            duration: 0.8,
             delay: 0.3
         }
     }
@@ -25,7 +26,7 @@ const itemVariants = {
 const AboutPage = ({ onlySection }) => {
 
     const aboutSectionContent = (
-        <motion.div 
+        <motion.div
             variants={containerVariants}
             initial="initial"
             whileInView="animate"

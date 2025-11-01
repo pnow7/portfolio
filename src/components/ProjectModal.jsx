@@ -5,12 +5,12 @@ const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
     const parseMarkdown = (markdown) => {
-        let html = markdown.trim(); 
+        let html = markdown.trim();
 
         html = html.replace(/###\s(.*?)\n/g, '<h3>$1</h3>');
         html = html.replace(/^- (.*)/gm, '<li>$1</li>');
         html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-        
+
         const lines = html.split('\n');
         let processedHtml = '';
         let paragraph = '';
@@ -48,7 +48,7 @@ const ProjectModal = ({ project, onClose }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <button className="modal-close-btn" onClick={onClose}>&times;</button>
-                
+
                 <div className="modal-header" style={{ backgroundImage: project.gradientColors }}>
                     {project.team && <div className="team-badge-header">{project.team}</div>}
                     <h2>{project.title}</h2>
