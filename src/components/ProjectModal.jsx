@@ -1,5 +1,10 @@
 import React from 'react';
 import '../styles/ProjectModal.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
@@ -56,6 +61,34 @@ const ProjectModal = ({ project, onClose }) => {
                 </div>
 
                 <div className="modal-body">
+                    {project.images && project.images.length > 0 && (
+                        <div className="image-gallery-section">
+                            <h3>스크린샷 및 아키텍처</h3>
+                            <Swiper
+                                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                slidesPerView={1}
+                                navigation
+                                pagination={{ clickable: true }}
+                                loop={true}
+                                autoHeight={true}
+                                className="project-swiper"
+                            >
+                                {project.images.map((imageName, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="swiper-image-wrapper">
+                                            <img
+                                                src={`/${project.imageFolder}/${imageName}`}
+                                                alt={`Project Screenshot ${index + 1}`}
+                                                className="project-image"
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                    )}
+
+
                     <div className="modal-description" dangerouslySetInnerHTML={{ __html: parseMarkdown(project.description) }} />
 
                     <div className="skills-section">

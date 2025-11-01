@@ -95,6 +95,19 @@ const projects = [
         gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)',
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["Spring Boot", "React", "FastAPI", "Gemini", "DALL·E 3"],
+        imageFolder: "ai2th",
+        images: [
+            "UML.png",
+            "SignUpLoginUML.png",
+            "CharacterCreateUML.png",
+            "CharacterCreate1.png",
+            "CharacterCreate2.png",
+            "CharacterCreate3.png",
+            "CharacterCreate4.png",
+            "CharacterCreate5.png",
+            "bucket.PNG",
+            "bucket2.PNG",
+        ],
     },
 ];
 
