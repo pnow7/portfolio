@@ -10,7 +10,7 @@
 
 | 항목 | 링크 |
 | :--- | :--- |
-| **배포 사이트** | **[https://firstportpoliopnow7.vercel.app/](https://pnowsportpolio.vercel.app/)** |
+| **배포 사이트** | **[https://pnowsportfolio.vercel.app/](https://pnowsportfolio.vercel.app/)** |
 | **GitHub 저장소** | [https://github.com/pnow7/portfolio-repo](https://github.com/pnow7/portfolio) |
 
 ---
