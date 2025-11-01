@@ -70,7 +70,7 @@ const ProjectModal = ({ project, onClose }) => {
                                 navigation
                                 pagination={{ clickable: true }}
                                 loop={true}
-                                autoHeight={true}
+                                // autoHeight={true}
                                 className="project-swiper"
                             >
                                 {project.images.map((imageName, index) => (
