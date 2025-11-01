@@ -68,7 +68,7 @@ const projects = [
     },
     {
         id: 3,
-        title: "Gmaking: AI 캐릭터 성장형 웹 플랫폼",
+        title: "AI 캐릭터 성장형 웹 플랫폼",
         summary: "AI를 활용하여 캐릭터를 생성, 성장시키고 PVE/PVP 전투 및 커뮤니티 활동을 제공하는 통합 웹 애플리케이션입니다.",
         description: `
 ### 🎯 프로젝트 개요
@@ -92,7 +92,7 @@ const projects = [
         github: "https://github.com/pnow7/Team-Gmaking",
         team: "팀",
         duration: "2025.10.01 ~ 2025.10.29",
-        gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)',
+        gradientColors: 'linear-gradient(135deg, #8BC34A, #4CAF50)',
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["Spring Boot", "React", "FastAPI", "Gemini", "DALL·E 3"],
         imageFolder: "ai2th",
