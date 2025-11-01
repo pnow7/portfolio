@@ -66,6 +66,36 @@ const projects = [
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["React", "Spring Boot", "Oracle DB", "OpenAI"],
     },
+    {
+        id: 3,
+        title: "Gmaking: AI 캐릭터 성장형 웹 플랫폼",
+        summary: "AI를 활용하여 캐릭터를 생성, 성장시키고 PVE/PVP 전투 및 커뮤니티 활동을 제공하는 통합 웹 애플리케이션입니다.",
+        description: `
+### 🎯 프로젝트 개요
+이 프로젝트는 사용자가 직접 만든 캐릭터를 중심으로 **AI 기반 성장, 전투, 커뮤니티 활동**이 이루어지는 **통합형 웹 애플리케이션**입니다. 단순한 캐릭터 꾸미기를 넘어, AI가 생성한 캐릭터와 함께 PVE / PVP 대전, 퀘스트 수행, 미니게임, AI 대화 시스템, 상점, 커뮤니티 기능이 제공됩니다.
+
+### 🧩 주요 기능
+- **AI 캐릭터 생성**: DALL·E 3 + Stable Diffusion 기반 이미지 생성 및 저장
+- **AI 캐릭터 대화**: ChatGPT/Gemini 기반 자연어 캐릭터 대화 기능
+- **PVE / PVP 대전**: AI 판단 기반 전투 결과, 로그 저장, 승패 기록
+- **캐릭터 성장 시스템**: 경험치, 스탯, 아이템, 퀘스트 기반 성장 로직
+- **AI 토론배틀**: 두 캐릭터의 토론 후 GPT·Gemini·Claude 3 모델 3심제 평가
+- **상점 시스템**: 캐릭터 부화권 및 아이템 구매, 인벤토리 관리
+- **커뮤니티 / 게시판**: 사용자 간 정보 공유 및 캐릭터 자랑
+- **회원 / 캐릭터 관리**: JWT 인증 기반 로그인, 캐릭터별 상태 동기화
+`.trim(),
+        skills: {
+            frontend: ["React", "JavaScript", "TailwindCSS", "Axios", "React Router"],
+            backend: ["Spring Boot", "Spring MVC", "REST API,", "FastAPI", "WebSocket (STOMP)", "MySQL", "JWT", "OAuth2", "Google Cloud Storage"],
+            tools: ["YOLOv8", "DALL·E 3", "GPT API", "Gemini", "Stable Diffusion", "Discord", "Kakao", "GitHub"],
+        },
+        github: "https://github.com/pnow7/Team-Gmaking",
+        team: "팀",
+        duration: "2025.10.01 ~ 2025.10.29",
+        gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)',
+        cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
+        cardTechs: ["Spring Boot", "React", "FastAPI", "Gemini", "DALL·E 3"],
+    },
 ];
 
 export default projects;
