@@ -63,7 +63,7 @@ const ProjectModal = ({ project, onClose }) => {
                 <div className="modal-body">
                     {project.images && project.images.length > 0 && (
                         <div className="image-gallery-section">
-                            <h3>스크린샷 및 아키텍처</h3>
+                            <h3>아키텍처 및 화면설계</h3>
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                                 slidesPerView={1}
