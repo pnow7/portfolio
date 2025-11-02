@@ -54,6 +54,7 @@
     * 초기 Stable Diffusion의 한계를 극복하고 **DALL·E 3로 전환**, 이미지 생성 시간을 **20초 이내로 단축**하여 서비스 효율성을 대폭 개선.
     * `GcsService` 구현을 통한 이미지 관리 로직 표준화 및 팀 협업 환경 구축.
 * **사용 기술:** **Spring Boot, FastAPI, DALL·E 3, YOLOv8, JWT, React, GCS**
+* **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/pnow7/team-Gmaking)
 
 ---
 
