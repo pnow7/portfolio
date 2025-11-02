@@ -133,17 +133,18 @@ const ProjectModal = ({ project, onClose }) => {
                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="modal-link">GitHub 저장소로 이동</a>
                     </p>
                 )}
-
-                <p className="modal-github">
-                    <a 
-                        href="/ai2th/AI2차개인포트폴리오_박현재.pdf" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="modal-link modal-pdf-link"
-                    >
-                        포트폴리오 PDF 새 탭에서 보기
-                    </a>
-                </p>
+                {project.id === 1 && (
+                    <p className="modal-github">
+                        <a 
+                            href="/ai2th/AI2차개인포트폴리오_박현재.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="modal-link modal-pdf-link"
+                        >
+                            포트폴리오 PDF 새 탭에서 보기
+                        </a>
+                    </p>
+                )}
             </div>
         </div>
     );
