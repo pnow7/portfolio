@@ -145,6 +145,18 @@ const ProjectModal = ({ project, onClose }) => {
                         </a>
                     </p>
                 )}
+                {project.id === 2 && (
+                    <p className="modal-github">
+                        <a 
+                            href="/full3th/3차포트폴리오_박현재.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="modal-link modal-pdf-link"
+                        >
+                            포트폴리오 PDF 새 탭에서 보기
+                        </a>
+                    </p>
+                )}
             </div>
         </div>
     );

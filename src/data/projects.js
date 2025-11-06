@@ -88,6 +88,22 @@ const projects = [
         gradientColors: 'linear-gradient(135deg, #42A5F5, #8860D0)',
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["React", "Spring Boot", "Oracle DB", "OpenAI"],
+        imageFolder: "full3th",
+        images: [
+            "UML.png",
+            "WORKFLOW.png",
+            "POST.png",
+            "REGISTPOST.png",
+            "COMMENT.png",
+            "RESTAURANTS.png",
+            "REVIEW.png",
+            "AICHATBOT.png",
+            "ADMIN1.png",
+            "ADMIN2.png",
+            "ADMIN3.png",
+            "ADMIN4.png",
+            "ADMIN5.png",
+        ]
     },
     {
         id: 3,
