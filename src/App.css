@@ -251,7 +251,7 @@ body::before {
 #root {
     min-height: 100vh;
     width: 100vw;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     padding: 0;
     background: linear-gradient(180deg, rgba(44, 39, 39, 0.95), #110e1b);
