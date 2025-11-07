@@ -138,6 +138,18 @@ const projects = [
         gradientColors: 'linear-gradient(135deg, #FF6B6B, #F9D423)',
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["JSP", "Spring Boot", "Oracle"],
+        imageFolder: "full2th",
+        images: [
+            "UMLEMPLOYEE.png",
+            "UMLADMIN.png",
+            "ERD.png",
+            "MAINEMPLOYEE.png",
+            "MAINADMIN.png",
+            "EMPLOYEELIST.png",
+            "EMPLOYEEREGIST.png",
+            "EMPLOYEEUPDATE.png",
+            "QRIMAGE.png",
+        ]
     },
 ];
 
