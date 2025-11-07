@@ -2,7 +2,7 @@
 
 "**현재에 충실히, 사용자에게 유용한 가치를 만드는 개발자**"
 
-[![배포 상태](https://img.shields.io/badge/Status-Deployed-success)](https://firstportpoliopnow7.vercel.app/)
+[![배포 상태](https://img.shields.io/badge/Status-Deployed-success)](https://pnowsportfolio.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat&logo=github)](https://github.com/pnow7)
 ---
 
