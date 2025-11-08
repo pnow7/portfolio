@@ -136,7 +136,7 @@ const ProjectModal = ({ project, onClose }) => {
                 {project.id === 1 && (
                     <p className="modal-github">
                         <a 
-                            href="/ai2th/Ai포트폴리오_박현재.pdf" 
+                            href="/ai2th/AI포트폴리오_박현재.pdf" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="modal-link modal-pdf-link"
