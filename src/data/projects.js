@@ -22,7 +22,7 @@ const projects = [
             backend: ["Spring Boot", "Spring MVC", "REST API,", "FastAPI", "WebSocket (STOMP)", "MySQL", "JWT", "OAuth2", "Google Cloud Storage"],
             tools: ["YOLOv8", "DALL·E 3", "GPT API", "Gemini", "Stable Diffusion", "Discord", "Kakao", "GitHub"],
         },
-        github: "https://github.com/pnow7/Team-Gmaking",
+        github: "https://github.com/psm0419/Gmaking",
         team: "팀",
         duration: "2025.10.01 ~ 2025.10.29",
         gradientColors: 'linear-gradient(135deg, #8BC34A, #4CAF50)',
