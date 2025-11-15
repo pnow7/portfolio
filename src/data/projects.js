@@ -23,6 +23,7 @@ const projects = [
             tools: ["YOLOv8", "DALL·E 3", "GPT API", "Gemini", "Stable Diffusion", "Discord", "Kakao", "GitHub"],
         },
         github: "https://github.com/psm0419/Gmaking",
+        dockerGithub: "https://github.com/pnow7/gmaking",
         team: "팀",
         duration: "2025.10.01 ~ 2025.10.29",
         gradientColors: 'linear-gradient(135deg, #8BC34A, #4CAF50)',

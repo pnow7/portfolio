@@ -130,15 +130,22 @@ const ProjectModal = ({ project, onClose }) => {
 
                 {project.github && (
                     <p className="modal-github">
-                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="modal-link">GitHub 저장소로 이동</a>
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="modal-link">GitHub 저장소로 이동 (팀 협업 레포)</a>
+                    </p>
+                )}
+                {project.dockerGithub && (
+                    <p className="modal-github">
+                        <a href={project.dockerGithub} target="_blank" rel="noopener noreferrer" className="modal-link">
+                            🐳 Docker 버전 GitHub 저장소 - by 박현재
+                        </a>
                     </p>
                 )}
                 {project.id === 1 && (
                     <p className="modal-github">
-                        <a 
-                            href="/ai2th/AI포트폴리오_박현재.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="/ai2th/AI포트폴리오_박현재.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="modal-link modal-pdf-link"
                         >
                             포트폴리오 PDF 새 탭에서 보기
@@ -147,10 +154,10 @@ const ProjectModal = ({ project, onClose }) => {
                 )}
                 {project.id === 2 && (
                     <p className="modal-github">
-                        <a 
-                            href="/full3th/3차포트폴리오_박현재.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="/full3th/3차포트폴리오_박현재.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="modal-link modal-pdf-link"
                         >
                             포트폴리오 PDF 새 탭에서 보기
@@ -159,10 +166,10 @@ const ProjectModal = ({ project, onClose }) => {
                 )}
                 {project.id === 3 && (
                     <p className="modal-github">
-                        <a 
-                            href="/full2th/2차포트폴리오_박현재.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="/full2th/2차포트폴리오_박현재.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="modal-link modal-pdf-link"
                         >
                             포트폴리오 PDF 새 탭에서 보기
