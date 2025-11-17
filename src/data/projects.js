@@ -30,6 +30,7 @@ const projects = [
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["Spring Boot", "React", "FastAPI", "Gemini", "DALL·E 3"],
         imageFolder: "ai2th",
+        youtube: "https://www.youtube.com/watch?v=raR4i7V-1ts",
         images: [
             "UML.png",
             "SignUpLoginUML.png",

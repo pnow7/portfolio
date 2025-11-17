@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/ProjectModal.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FaYoutube } from 'react-icons/fa';
+import { DiDocker } from 'react-icons/di';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -136,21 +138,36 @@ const ProjectModal = ({ project, onClose }) => {
                 {project.dockerGithub && (
                     <p className="modal-github">
                         <a href={project.dockerGithub} target="_blank" rel="noopener noreferrer" className="modal-link">
-                            🐳 Docker 버전 GitHub 저장소 - by 박현재
+                            <DiDocker style={{ marginRight: '5px', verticalAlign: 'middle' }} />
+                            Docker 버전 GitHub 저장소 - by 박현재
                         </a>
                     </p>
                 )}
                 {project.id === 1 && (
-                    <p className="modal-github">
-                        <a
-                            href="/ai2th/AI포트폴리오_박현재.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="modal-link modal-pdf-link"
-                        >
-                            포트폴리오 PDF 새 탭에서 보기
-                        </a>
-                    </p>
+                    <>
+                        <p className="modal-github">
+                            <a
+                                href="/ai2th/AI포트폴리오_박현재.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modal-link modal-pdf-link"
+                            >
+                                포트폴리오 PDF 새 탭에서 보기
+                            </a>
+                        </p>
+
+                        <p className="modal-github">
+                            <a
+                                href={project.youtube} 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modal-link modal-youtube-link"
+                            >
+                                <FaYoutube style={{ marginRight: '5px' }} />
+                                프로젝트 시연 영상 보기 (YouTube)
+                            </a>
+                        </p>
+                    </>
                 )}
                 {project.id === 2 && (
                     <p className="modal-github">
