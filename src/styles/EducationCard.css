@@ -1,71 +1,69 @@
 .education-card {
-  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  cursor: default;
   padding: 1.5rem;
-  text-align: left;
-  color: #f0f0f0;
-  background: #2C2040;
-  overflow: hidden;
+  margin-left: 3rem;
+  position: relative;
+  backdrop-filter: blur(5px);
+  cursor: default;
 }
 
-.education-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+.edu-timeline-dot {
+  position: absolute;
+  left: -2.4rem;
+  top: 1.5rem;
+  width: 16px;
+  height: 16px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-color);
 }
 
-.card-content {
+.edu-header {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.edu-type-badge {
-  background: #7c3aed;
-  color: #fff;
-  border-radius: 8px;
-  padding: 4px 10px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.edu-title-wrapper {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0.5rem;
+}
+
+.edu-type {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.edu-period {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .edu-title {
   font-size: 1.2rem;
-  color: #f0f0f0;
-  margin: 0;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
 }
 
-.github-icon-link {
+.edu-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.edu-link {
   display: inline-flex;
   align-items: center;
-  margin-left: 8px;
-}
-
-.github-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.edu-period {
-  font-size: 0.95rem;
-  color: #ccc;
-  margin-bottom: 0.5rem;
-}
-
-.edu-description {
+  gap: 0.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
   font-size: 0.9rem;
-  color: #ddd;
-  line-height: 1.6;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.edu-link:hover {
+  color: #fff;
 }

@@ -1,73 +1,47 @@
-.skills-col {
-    margin-bottom: 40px;
-    text-align: center;
+.skill-category {
+    margin-bottom: 2rem;
 }
 
-.skills-col h4 {
-    font-size: 1.8em;
-    color: #f0f0f0; 
-    margin-bottom: 25px;
-    font-weight: 600;
-    position: relative;
+.skill-category h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+    display: inline-block;
 }
 
-.skills-col h4::after {
-    content: '';
-    display: block;
-    width: 120px;
-    height: 3px;
-    background: #6a0dad; 
-    margin: 4px auto 0;
-    border-radius: 5px;
-}
-
-.skills-list {
+.skills-grid-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 25px; 
-    list-style: none;
-    padding: 0 10px; 
-    margin: 0 auto;
-    max-width: 100%;
-    z-index: 10;
-    -webkit-overflow-scrolling: none; 
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.skills-list::-webkit-scrollbar {
-    display: none;
-}
-
-
-.skills-list li {
-    position: relative;
-    background: #342f3b; 
-    border: 1px solid #4a4452;
-    border-radius: 15px; 
-    width: 120px; 
-    height: 120px;
+.skill-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-
-.skills-list li:hover {
-    transform: translateY(-5px) scale(1.05); 
-    box-shadow: 0 8px 20px rgba(106, 13, 173, 0.5); 
-    background: #7f6996; 
+.skill-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
 }
 
+.skill-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
 
-.skills-list li img {
-    width: 70px; 
-    height: 70px;
-    object-fit: contain; 
+.skill-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
 }

@@ -4,40 +4,26 @@ import educationData from "../data/education";
 import EducationCard from "../components/EducationCard";
 import "../styles/EducationPage.css";
 
-const sectionVariants = {
-    initial: { opacity: 0, y: 50 },
-    whileInView: { opacity: 1, y: 0 },
-};
-const sectionProps = {
-    variants: sectionVariants,
-    initial: "initial",
-    whileInView: "whileInView",
-    viewport: { once: false, amount: 0.3 },
-    transition: { duration: 0.8, delay: 0.1 }
-};
-
-const EducationPage = ({ onlySection }) => {
+const EducationPage = () => {
     return (
-        onlySection ? (
-            <motion.section
-                className="education-section"
-                // sectionProps 객체 한번에 호출
-                {...sectionProps}
+        <div className="education-container">
+            <motion.h2
+                className="section-title"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
             >
-                <h2 className="section-title">Education</h2>
-                <div className="education-list">
-                    {educationData.map((item, index) => (
-                        <EducationCard
-                            key={index}
-                            item={item}
-                            index={index}
-                        />
-                    ))}
-                </div>
-            </motion.section>
-        ) : (
-            <></>
-        )
+                Education & Experience
+            </motion.h2>
+            <div className="education-grid">
+                {educationData.map((item, index) => (
+                    <EducationCard
+                        key={index}
+                        item={item}
+                        index={index}
+                    />
+                ))}
+            </div>
+        </div>
     );
 };
 

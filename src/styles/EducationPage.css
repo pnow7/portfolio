@@ -1,13 +1,22 @@
-.education-section {
-  max-width: 1100px;
-  margin:  20em auto;
-  padding: 2rem 1rem;
-  text-align: center;
+.education-container {
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
-.education-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.education-grid::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
 }

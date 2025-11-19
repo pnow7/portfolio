@@ -1,50 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaGithub } from 'react-icons/fa';
 import "../styles/EducationCard.css";
 
-const cardVariants = {
-    initial: { opacity: 0, y: 20 },
-    animate: i => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: i * 0.1,
-            duration: 0.6,
-        }
-    })
-};
-
 const EducationCard = ({ item, index }) => {
-    const cardStyle = {
-        backgroundImage: item.color,
-    };
-
     return (
         <motion.div
             className="education-card"
-            style={cardStyle}
-            variants={cardVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: false, amount: 0.5 }}
-            custom={index}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: index * 0.1 }}
+            whileHover={{ scale: 1.02, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
         >
-            <div className="card-content">
-                <span className="edu-type-badge">{item.type}</span>
-                <div className="edu-title-wrapper">
-                    <h3 className="edu-title">{item.institution}</h3>
-                    {item.githubLink && (
-                        <a href={item.githubLink} target="_blank" rel="noopener noreferrer" className="github-icon-link" aria-label="교육 관련 GitHub 저장소">
-                            <img
-                                src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
-                                alt="GitHub"
-                                className="github-icon"
-                            />
-                        </a>
-                    )}
+            <div className="edu-timeline-dot"></div>
+            <div className="edu-content">
+                <div className="edu-header">
+                    <span className="edu-type">{item.type}</span>
+                    <span className="edu-period">{item.period}</span>
                 </div>
-                <p className="edu-period">{item.period}</p>
-                <p className="edu-description">{item.description}</p>
+                <h3 className="edu-title">{item.institution}</h3>
+                <p className="edu-desc">{item.description}</p>
+                {item.githubLink && (
+                    <a href={item.githubLink} target="_blank" rel="noopener noreferrer" className="edu-link">
+                        <FaGithub /> GitHub
+                    </a>
+                )}
             </div>
         </motion.div>
     );

@@ -1,90 +1,105 @@
-body {
-    overflow-y: scroll; 
+.about-container {
+  color: var(--text-color);
+  width: 100%;
 }
 
-.about-section {
-  max-width: 700px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242);
-  border-radius: 16px;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-}
-
-.about-section-style {
-  text-align: center;
-}
-
-.about-content-wrapper {
+.profile-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-img-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .about-profile-img {
-  width: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 24px rgba(124,58,237,0.15);
+  object-fit: cover;
+  border: 3px solid var(--accent-color);
+  position: relative;
+  z-index: 2;
 }
 
-.about-title {
-  margin-bottom: 8px;
+.profile-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: 1;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, var(--accent-color), #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-desc {
   font-size: 1.1rem;
-  margin-bottom: 12px;
-}
-
-.about-hashtags {
-  margin-bottom: 18px;
-  justify-content: center;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
 }
 
 .hashtag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 0.7rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
 .hashtag {
-  background: #7c3aed;
-  color: #fff;
-  border-radius: 16px;
-  padding: 0.3rem 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  backdrop-filter: blur(5px);
 }
 
-.about-github-btn {
-  margin-bottom: 24px;
+.skills-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--text-color);
 }
 
-.skills-area {
-  margin-top: 2.5rem;
-}
-
-.skills-tools-grid {
+.skills-grid {
   display: flex;
-  gap: 2.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skills-col {
-  min-width: 160px;
-}
-
-.skills-col h4 {
-  margin-bottom: 0.7rem;
-  color: #a78bfa;
-}
-
-.skill-icon-img {
-  width: 40px;
-  height: 40px;
+  flex-direction: column;
+  gap: 2rem;
 }

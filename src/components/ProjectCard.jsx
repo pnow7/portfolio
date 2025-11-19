@@ -1,85 +1,61 @@
 import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import "../styles/ProjectCard.css";
 
-const ProjectCard = ({ project, onDetailsClick }) => {
-
+const ProjectCard = ({ project, onDetailsClick, index }) => {
     const cardRef = useRef(null);
-
-    const [style, setStyle] = useState({
-        backgroundImage: project.cardColor,
-    });
-
-    const [overlayStyle, setOverlayStyle] = useState({ filter: 'opacity(0)' });
+    const [rotateX, setRotateX] = useState(0);
+    const [rotateY, setRotateY] = useState(0);
 
     const handleMouseMove = (e) => {
         if (!cardRef.current) return;
-
         const rect = cardRef.current.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
 
-        const rotateY = (-1 / 12) * x + 10;
-        const rotateX = (1 / 12) * y - 5;
+        const rotateXVal = ((y - centerY) / centerY) * -10;
+        const rotateYVal = ((x - centerX) / centerX) * 10;
 
-        const backgroundPosition = `${x / 5 + y / 5}%`;
-        const opacity = Math.min(x / 200, 1);
-
-        setStyle({
-            transform: `perspective(350px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-            transition: 'transform 0.1s',
-            backgroundImage: project.cardColor,
-        });
-
-        setOverlayStyle({
-            backgroundPosition: backgroundPosition,
-            filter: `opacity(${opacity}) brightness(1.2)`,
-            transition: 'opacity 0.1s',
-        });
+        setRotateX(rotateXVal);
+        setRotateY(rotateYVal);
     };
 
-    const handleMouseOut = () => {
-        setStyle({
-            transform: 'perspective(350px) rotateY(0deg) rotateX(0deg)',
-            transition: 'transform 0.3s',
-            backgroundImage: project.cardColor,
-        });
-        setOverlayStyle({
-            filter: 'opacity(0)',
-            transition: 'opacity 0.3s',
-        });
+    const handleMouseLeave = () => {
+        setRotateX(0);
+        setRotateY(0);
     };
-
-    const handleCardClick = () => {
-        if (onDetailsClick) {
-            onDetailsClick(project);
-        }
-    }
 
     return (
-        <div
-            className="project-card-container"
-            ref={cardRef}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseOut}
-            onClick={handleCardClick}
-            style={style}
+        <motion.div
+            className="project-card-wrapper"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            style={{ perspective: 1000 }}
         >
-            <div className="project-card-overlay" style={overlayStyle}></div>
-
-            <div className="project-card-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-summary">{project.summary}</p>
-                <div className="project-badges">
-                    {project.team && <span className="project-team-badge">{project.team}</span>}
-
-                    {project.cardTechs && project.cardTechs.map((tech, i) => (
-                        <span key={i} className="project-skill-badge">
-                            {tech}
-                        </span>
-                    ))}
+            <motion.div
+                ref={cardRef}
+                className="project-card"
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                onClick={() => onDetailsClick(project)}
+                animate={{ rotateX, rotateY }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+                <div className="card-glow" />
+                <div className="card-content">
+                    <h3>{project.title}</h3>
+                    <p>{project.summary}</p>
+                    <div className="card-tags">
+                        {project.cardTechs?.slice(0, 3).map((tech, i) => (
+                            <span key={i} className="tech-tag">{tech}</span>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

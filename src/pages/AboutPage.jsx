@@ -5,65 +5,58 @@ import { hashtags, frontendSkills, backendSkills } from "../data/skills";
 import profileImage from "../assets/profile.jpg";
 import "../styles/AboutPage.css";
 
-const containerVariants = {
-    initial: { opacity: 0, y: 50 },
-    animate: {
-        opacity: 1, y: 0,
-        transition: {
-            when: "beforeChildren",
-            staggerChildren: 0.15,
-            duration: 0.8,
-            delay: 0.3
-        }
-    }
-};
-
-const itemVariants = {
-    initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
-
-const AboutPage = ({ onlySection }) => {
-
-    const aboutSectionContent = (
-        <motion.div
-            variants={containerVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: false, amount: 0.3 }}
-        >
-            <motion.h2 className="section-title" variants={itemVariants}>About Me</motion.h2>
-            <section className="about-section about-section-style">
-                <motion.div className="about-content-wrapper" variants={itemVariants}>
+const AboutPage = () => {
+    return (
+        <div className="about-container">
+            <motion.div
+                className="profile-header"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+            >
+                <div className="profile-img-wrapper">
                     <img
                         src={profileImage}
-                        alt="3D Character"
+                        alt="Profile"
                         className="about-profile-img"
                     />
-                    <p className="about-desc">
-                        안녕하세요! 저는 <b>신입 풀스택 개발자 박현재</b>입니다.<br />
-                        사용자 경험과 효율적인 시스템 설계를 중요하게 생각하며,<br />
-                        다양한 기술을 활용해 문제를 해결하는 것을 즐깁니다.
-                    </p>
-                    <div className="hashtag-list about-hashtags">
-                        {hashtags.map(tag => (
-                            <motion.span key={tag} className="hashtag" variants={itemVariants}>{tag}</motion.span>
-                        ))}
-                    </div>
-                </motion.div>
+                    <div className="profile-glow"></div>
+                </div>
+                <h2 className="section-title">About Me</h2>
+                <p className="about-desc">
+                    Hello! I'm <b>Hyunjae Park</b>, a Full Stack Developer.<br />
+                    I focus on creating immersive user experiences and efficient systems.
+                </p>
 
-                <motion.div className="skills-area" variants={itemVariants}>
-                    <h3>Skill &amp; Tools</h3>
-                    <div className="skills-tools-grid">
-                        <SkillList title="Frontend" skills={frontendSkills} itemVariants={itemVariants} />
-                        <SkillList title="Backend" skills={backendSkills} itemVariants={itemVariants} />
-                    </div>
-                </motion.div>
-            </section>
-        </motion.div>
+                <div className="hashtag-list">
+                    {hashtags.map((tag, index) => (
+                        <motion.span
+                            key={tag}
+                            className="hashtag"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.3 + index * 0.1 }}
+                        >
+                            {tag}
+                        </motion.span>
+                    ))}
+                </div>
+            </motion.div>
+
+            <motion.div
+                className="skills-section"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+            >
+                <h3>Skills & Tools</h3>
+                <div className="skills-grid">
+                    <SkillList title="Frontend" skills={frontendSkills} />
+                    <SkillList title="Backend" skills={backendSkills} />
+                </div>
+            </motion.div>
+        </div>
     );
-
-    return aboutSectionContent
 };
 
 export default AboutPage;
