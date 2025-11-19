@@ -165,7 +165,18 @@
     transform: translateY(-2px);
 }
 
+.link-btn.github:hover {
+    background: black;
+}
+
+.link-btn.docker:hover {
+    background: #42A5F5;
+}
+
+.link-btn.document:hover {
+    background: #C62828;
+}
+
 .link-btn.youtube:hover {
     background: #ff0000;
-}
 }
