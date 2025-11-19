@@ -74,6 +74,15 @@ export default function Layout({ children }) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     className="home-overlay"
+                    style={{
+                        color: theme === 'light' ? '#000' : '#fff',
+                        position: 'absolute',
+                        bottom: '20%',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        width: '100%',
+                        zIndex: 10
+                    }}
                 >
                     <h1>Interactive Portfolio</h1>
                     <p>Click nodes to explore</p>

@@ -45,6 +45,9 @@ body {
 .main-header {
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(to bottom,
+            rgba(50, 50, 50, 0.3),
+            rgba(20, 20, 20, 0.6));
     align-items: center;
     padding: 1.5rem 2rem;
     position: absolute;
@@ -109,7 +112,6 @@ body {
         pointer-events: auto;
         backdrop-filter: blur(5px);
     }
-
 
     /* Modal Backdrop */
     .modal-backdrop {
