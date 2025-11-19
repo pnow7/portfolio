@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
@@ -10,24 +11,23 @@ import 'swiper/css/pagination';
 import '../styles/ProjectModal.css';
 
 // 마크다운 문법을 제거하고 HTML을 반환하는 헬퍼 함수
-// (외부 라이브러리 없이 기본적인 변환만 수행합니다.)
 const cleanMarkdown = (markdownText) => {
     if (!markdownText) return null;
 
-    // 1. 헤더 (###, ##, #) 제거
+    // 헤더 (###, ##, #) 제거
     let htmlContent = markdownText.replace(/#{1,3}\s/g, '');
 
-    // 2. 볼드체/이탤릭체 (**text**, *text*) 제거 (텍스트만 남김)
+    // 볼드체/이탤릭체 (**text**, *text*) 제거 (텍스트만 남김)
     htmlContent = htmlContent.replace(/(\*\*|__)(.*?)\1/g, '$2');
     htmlContent = htmlContent.replace(/(\*|_)(.*?)\1/g, '$2');
 
-    // 3. 리스트 항목 (* or - ) 제거
+    // 리스트 항목 (* or - ) 제거
     htmlContent = htmlContent.replace(/[\*\-]\s/g, '');
 
-    // 4. 수평선 (---) 제거
+    // 수평선 (---) 제거
     htmlContent = htmlContent.replace(/^-{3,}$/gm, '');
 
-    // 5. Trim()으로 제거된 줄바꿈을 <p> 태그와 <br>로 변환
+    // Trim()으로 제거된 줄바꿈을 <p> 태그와 <br>로 변환
     const paragraphs = htmlContent.split('\n').filter(p => p.trim() !== '');
 
     return paragraphs.map((text, index) => {
@@ -47,7 +47,7 @@ const cleanMarkdown = (markdownText) => {
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
-    return (
+    return ReactDOM.createPortal(
         <AnimatePresence>
             <motion.div
                 className="modal-backdrop"
@@ -55,6 +55,7 @@ const ProjectModal = ({ project, onClose }) => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={onClose}
+                style={{ zIndex: 2000 }}
             >
                 <motion.div
                     className="modal-container"
@@ -147,7 +148,8 @@ const ProjectModal = ({ project, onClose }) => {
                     </div>
                 </motion.div>
             </motion.div>
-        </AnimatePresence>
+        </AnimatePresence>,
+        document.body
     );
 };
 
