@@ -134,11 +134,11 @@ const ProjectModal = ({ project, onClose }) => {
                                     <DiDocker /> Docker GitHub
                                 </a>
                             )}
-                            {project.pdf && (
+                            {/* {project.pdf && (
                                 <a href={project.pdf} target="_blank" rel="noopener noreferrer" className="link-btn document">
                                     <FaFileAlt /> PDF 포트폴리오 보기
                                 </a>
-                            )}
+                            )} */}
                             {project.youtube && (
                                 <a href={project.youtube} target="_blank" rel="noopener noreferrer" className="link-btn youtube">
                                     <FaYoutube /> Demo

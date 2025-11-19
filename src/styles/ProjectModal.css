@@ -257,10 +257,10 @@
     color: #fff;
 }
 
-.link-btn.document:hover {
+/* .link-btn.document:hover {
     background: #e53935;
     color: #fff;
-}
+} */
 
 .link-btn.youtube:hover {
     background: #ff0000;

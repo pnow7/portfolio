@@ -30,7 +30,7 @@ const projects = [
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["Spring Boot", "React", "MySQL", "FastAPI", "Gemini", "DALL·E 3"],
         imageFolder: "ai2th",
-        pdf: "/ai2th/AI포트폴리오_박현재.pdf",
+        // pdf: "/ai2th/AI포트폴리오_박현재.pdf",
         youtube: "https://www.youtube.com/watch?v=raR4i7V-1ts",
         images: [
             "UML.png",
@@ -92,7 +92,7 @@ const projects = [
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["React", "Spring Boot", "Oracle DB", "OpenAI"],
         imageFolder: "full3th",
-        pdf: "/full3th/3차포트폴리오_박현재.pdf",
+        // pdf: "/full3th/3차포트폴리오_박현재.pdf",
         images: [
             "UML.png",
             "WORKFLOW.png",
@@ -143,7 +143,7 @@ const projects = [
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["JSP", "Spring Boot", "Oracle"],
         imageFolder: "full2th",
-        pdf: "/full2th/2차포트폴리오_박현재.pdf",
+        // pdf: "/full2th/2차포트폴리오_박현재.pdf",
         images: [
             "UMLEMPLOYEE.png",
             "UMLADMIN.png",
