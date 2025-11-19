@@ -37,7 +37,7 @@
 
 .edu-period {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color);
 }
 
 .edu-title {
@@ -48,7 +48,7 @@
 
 .edu-desc {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-color);
   line-height: 1.6;
   margin-bottom: 1rem;
 }

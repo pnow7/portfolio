@@ -1,5 +1,6 @@
 .skill-category {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .skill-category h4 {
@@ -15,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
 .skill-item {

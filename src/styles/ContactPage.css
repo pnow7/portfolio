@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--text-color);
 }
 
 .contact-content {
@@ -15,7 +16,6 @@
 
 .contact-text {
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -70,8 +70,8 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    color: #fff;
     font-size: 1rem;
+    color: var(--text-color);
     outline: none;
     transition: border-color 0.3s;
 }
@@ -88,7 +88,7 @@
 .submit-btn {
     padding: 1rem;
     background: var(--accent-color);
-    color: #fff;
+    color: var(--text-color);
     border: none;
     border-radius: 8px;
     font-size: 1rem;

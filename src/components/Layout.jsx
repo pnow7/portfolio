@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import Brain3D from './Brain3D';
-import { FaSun, FaMoon, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaSun, FaMoon, FaTimes } from 'react-icons/fa';
 import AboutPage from '../pages/AboutPage';
 import ProjectsPage from '../pages/ProjectsPage';
 import EducationPage from '../pages/EducationPage';
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
             <Brain3D activeSection={activeSection} onSectionChange={setActiveSection} />
 
             <header className="main-header">
-                <div className="logo">My Mind</div>
+                <div className="logo">PNOW</div>
                 <button onClick={toggleTheme} className="theme-toggle">
                     {theme === 'dark' ? <FaSun /> : <FaMoon />}
                 </button>
@@ -84,10 +84,19 @@ export default function Layout({ children }) {
                         zIndex: 10
                     }}
                 >
-                    <h1>Interactive Portfolio</h1>
+                    <h3>pnow's Interactive Portfolio</h3>
                     <p>Click nodes to explore</p>
                 </motion.div>
             )}
+
+            <footer className="main-footer">
+                <p>PNOW. All rights reserved.</p>
+                <div className="footer-links">
+                    <a href="https://github.com/pnow7" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <FaGithub />
+                    </a>
+                </div>
+            </footer>
         </div>
     );
 }
