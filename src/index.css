@@ -12,7 +12,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --text-color: #213547;
+    /* --text-color: #213547; */
     --bg-color: #ffffff;
     --accent-color: #ff0055;
 }
