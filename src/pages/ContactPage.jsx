@@ -21,8 +21,7 @@ const ContactPage = () => {
                 transition={{ delay: 0.2 }}
             >
                 <p className="contact-text">
-                    I'm always open to new opportunities and collaborations.
-                    Feel free to reach out!
+                    편하게 연락 주세요!
                 </p>
 
                 <div className="contact-links">

@@ -143,7 +143,7 @@ const projects = [
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
         cardTechs: ["JSP", "Spring Boot", "Oracle"],
         imageFolder: "full2th",
-        pdf: "/full2th/2차포트포리오_박현재.pdf",
+        pdf: "/full2th/2차포트폴리오_박현재.pdf",
         images: [
             "UMLEMPLOYEE.png",
             "UMLADMIN.png",
