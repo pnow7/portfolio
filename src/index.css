@@ -209,14 +209,14 @@ body {
     transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-.main-footer .footer-links a {
+.footer-links a {
     color: inherit;
-    margin-left: 15px;
+    margin-right: 60px;
     font-size: 1.1rem;
     transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-.main-footer .footer-links a:hover {
+.footer-links a:hover {
     color: var(--accent-color);
     opacity: 1;
 }
