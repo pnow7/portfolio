@@ -9,8 +9,9 @@ const frontendSkills = [
 
 const backendSkills = [
     { name: "Java", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" },
+    { name: "Spring / Spring Boot", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" },
     { name: "Python", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" },
-    { name: "Spring", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" },
+    { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
     { name: "Oracle", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" },
     { name: "MySQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" },
     { name: "SQL Developer", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" },

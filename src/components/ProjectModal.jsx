@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
@@ -47,7 +47,7 @@ const cleanMarkdown = (markdownText) => {
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
-    return ReactDOM.createPortal(
+    return createPortal(
         <AnimatePresence>
             <motion.div
                 className="modal-backdrop"
