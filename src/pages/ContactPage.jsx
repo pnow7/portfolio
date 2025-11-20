@@ -93,7 +93,7 @@ const ContactPage = () => {
                         onClick={() => setIsSuccess(false)}
                         className="success-reset-btn"
                     >
-                        새 메시지 작성
+                        확인
                     </button>
                 </motion.div>
             </div>
