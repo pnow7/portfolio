@@ -19,21 +19,53 @@
 
 .card-glow {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(var(--accent-color-rgb), 0.15),
-      transparent 40%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  inset: 0;
   pointer-events: none;
   z-index: 2;
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+
+  /* 기본적으로 라인 강조 */
+  background:
+    linear-gradient(to bottom,
+      transparent 0%,
+      var(--glow-line-color) 45%,
+      var(--glow-line-strong) 50%,
+      var(--glow-line-color) 55%,
+      transparent 100%);
+
+  background-position: center var(--mouse-y, 50%);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+
+  /* 주변 글로우 */
+  box-shadow:
+    0 0 20px var(--glow-shadow),
+    0 0 35px var(--glow-shadow-inner) inset;
 }
 
+/* Hover 시 활성 */
 .project-card:hover .card-glow {
   opacity: 1;
+}
+
+/* ---- THEME VARIABLES ---- */
+
+/* 🌙 Dark Mode */
+.dark .project-card .card-glow {
+  --glow-line-color: rgba(255, 255, 255, 0.40);
+  --glow-line-strong: rgba(255, 255, 255, 0.85);
+  --glow-shadow: rgba(255, 255, 255, 0.18);
+  --glow-shadow-inner: rgba(255, 255, 255, 0.10);
+}
+
+/* ☀️ Light Mode */
+.light .project-card .card-glow {
+  --glow-line-color: rgba(150, 150, 150, 0.35);
+  --glow-line-strong: rgba(200, 200, 200, 0.75);
+  --glow-shadow: rgba(180, 180, 180, 0.12);
+  --glow-shadow-inner: rgba(200, 200, 200, 0.08);
 }
 
 /* Project Type Label */
