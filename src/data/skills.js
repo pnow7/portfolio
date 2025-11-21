@@ -20,7 +20,7 @@ const backendSkills = [
 ];
 
 const hashtags = [
-    "#성장지향", "#문제해결", "#책임감", "#협업", "#꾸준함", "#긍정적", "#도전", "#유연함"
+    "#호기심", "#성장지향", "#문제해결", "#책임감", "#협업", "#꾸준함", "#긍정적", "#도전", "#유연함"
 ];
 
 export { frontendSkills, backendSkills, hashtags };

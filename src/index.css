@@ -13,7 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
 
     --text-color: #000;
-    --bg-color: #ffffff;
+    --bg-color: #ffffffb9;
     --accent-color: #ff0055;
 }
 
@@ -140,6 +140,7 @@ body {
     /* Custom Scrollbar */
     scrollbar-width: thin;
     scrollbar-color: var(--accent-color) transparent;
+    background-color: var(--bg-color);
 }
 
 .panel-content::-webkit-scrollbar {

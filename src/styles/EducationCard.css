@@ -1,12 +1,17 @@
 .education-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--accent-color);
   border-radius: 12px;
   padding: 1.5rem;
   margin-left: 3rem;
   position: relative;
   backdrop-filter: blur(5px);
   cursor: default;
+}
+
+.light .education-card {
+  background-color: #e7e7e7;
+  border: 1px solid var(--accent-color);
 }
 
 .edu-timeline-dot {
@@ -62,8 +67,4 @@
   font-size: 0.9rem;
   font-weight: 500;
   transition: color 0.3s;
-}
-
-.edu-link:hover {
-  color: #fff;
 }
