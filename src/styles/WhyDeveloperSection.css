@@ -1,0 +1,167 @@
+.why-developer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.book-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.book-container.open {
+  transform: translateX(0) rotateY(0deg);
+  cursor: default;
+  width: 600px;
+  /* Expand width when open */
+}
+
+/* Mobile adjustments for open state width */
+@media (max-width: 650px) {
+  .book-container.open {
+    width: 90vw;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+.book-cover {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: rgba(20, 20, 30, 0.8);
+  border: 2px solid var(--accent-color);
+  border-radius: 10px 20px 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.book-container.open .book-cover {
+  transform: rotateY(-180deg);
+}
+
+.book-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: var(--accent-color);
+  transform: rotateY(90deg) translateZ(-20px);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.question-mark {
+  font-size: 5rem;
+  color: var(--accent-color);
+  text-shadow: 0 0 20px var(--accent-color);
+  font-weight: bold;
+}
+
+.book-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(30, 30, 40, 0.9);
+  border-radius: 10px 20px 20px 10px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 5;
+  /* When open, content should be visible. When closed, it's behind the cover */
+}
+
+/* In open state, the content expands to fill the wider container */
+.book-container.open .book-content {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* For the "pages" effect inside */
+.book-pages-edge {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 10px;
+  background: linear-gradient(to right, #ccc, #eee, #ccc);
+  border-radius: 0 5px 5px 0;
+  transform: translateZ(-1px);
+}
+
+.story-text {
+  font-family: 'Pretendard', sans-serif;
+  /* Assuming a Korean font or fallback */
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  white-space: pre-line;
+  /* Respect newlines */
+  text-align: left;
+}
+
+.story-text p {
+  margin-bottom: 1rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: var(--accent-color);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.instruction-text {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  animation: fadePulse 2s infinite;
+}
+
+@keyframes fadePulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import SkillList from "../components/SkillList";
 import { hashtags, frontendSkills, backendSkills } from "../data/skills";
 import profileImage from "../assets/profile.jpg";
+import WhyDeveloperSection from "../components/WhyDeveloperSection";
 import "../styles/AboutPage.css";
 
 const AboutPage = () => {
@@ -28,6 +29,14 @@ const AboutPage = () => {
                     호기심이 많아 새로운 기술을 보면 직접 시도해보는 편이고,<br />
                     빠르게 변화하는 세상 속에서 다양한 도전을 통해 꾸준히 배우고 있습니다.
                 </p>
+
+                <p className="about-desc" style={{ marginBottom: '3rem' }}>
+                    단순히 코드를 작성하는 것을 넘어, 사용자가 겪는 문제를 해결하고 더 나은 경험을 제공하는 것에 가치를 둡니다.
+                    {/* <br />
+                    아래 책을 클릭하시면 <br /> 제가 개발자가 되기로 결심한 이야기를 보실 수 있습니다. */}
+                </p>
+
+                <WhyDeveloperSection />
 
                 <div className="hashtag-list">
                     {hashtags.map((tag, index) => (
