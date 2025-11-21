@@ -46,7 +46,7 @@ const WhyDeveloperSection = () => {
             >
                 <div className="book-cover">
                     <div className="book-spine"></div>
-                    <span className="question-mark">?</span>
+                    <span className="question-mark">개발자가 <br /> 되고싶은 이유 ?</span>
                     {!isOpen && <span className="instruction-text">Click to open</span>}
                 </div>
 
