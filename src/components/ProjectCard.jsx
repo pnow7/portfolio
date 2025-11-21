@@ -20,6 +20,10 @@ const ProjectCard = ({ project, onDetailsClick, index }) => {
 
         setRotateX(rotateXVal);
         setRotateY(rotateYVal);
+
+        // Set CSS variables for glow effect
+        cardRef.current.style.setProperty('--mouse-x', `${x}px`);
+        cardRef.current.style.setProperty('--mouse-y', `${y}px`);
     };
 
     const handleMouseLeave = () => {
@@ -45,6 +49,14 @@ const ProjectCard = ({ project, onDetailsClick, index }) => {
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
                 <div className="card-glow" />
+
+                {/* Project Type Label */}
+                {(project.team || project.type === "side") && (
+                    <div className={`project-type-label ${project.type === "side" ? "side" : "team"}`}>
+                        {project.team ? "Team Project" : "Side Project"}
+                    </div>
+                )}
+
                 <div className="card-content">
                     <h3>{project.title}</h3>
                     <p>{project.summary}</p>

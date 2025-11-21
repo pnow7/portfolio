@@ -156,6 +156,27 @@ const projects = [
             "QRIMAGE.png",
         ]
     },
+    //     {
+    //         id: 4,
+    //         title: "Personal Portfolio (Side Project)",
+    //         summary: "A personal portfolio website to showcase my projects and skills.",
+    //         description: `
+    // ### 🎨 Project Overview
+    // This is a **Side Project** to demonstrate the "Side Project" label functionality.
+    //         `.trim(),
+    //         skills: {
+    //             frontend: ["React", "Three.js"],
+    //             backend: [],
+    //             tools: ["Git"],
+    //         },
+    //         type: "side",
+    //         duration: "2025.11 - Present",
+    //         gradientColors: 'linear-gradient(135deg, #FF0080, #7928CA)',
+    //         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
+    //         cardTechs: ["React", "Three.js"],
+    //         imageFolder: "portfolio",
+    //         images: []
+    //     }
 ];
 
 export default projects;
