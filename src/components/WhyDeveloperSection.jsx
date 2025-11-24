@@ -26,7 +26,7 @@ const WhyDeveloperSection = () => {
             const timeout = setTimeout(() => {
                 setDisplayedText(prev => prev + storyText[currentIndex]);
                 setCurrentIndex(prev => prev + 1);
-            }, 30); // Typing speed
+            }, 20); // Typing speed
 
             return () => clearTimeout(timeout);
         }
@@ -35,6 +35,13 @@ const WhyDeveloperSection = () => {
     const handleBookClick = () => {
         if (!isOpen) {
             setIsOpen(true);
+        }
+    };
+
+    const handleTextClick = () => {
+        if (isOpen && currentIndex < storyText.length) {
+            setDisplayedText(storyText);
+            setCurrentIndex(storyText.length);
         }
     };
 
@@ -50,7 +57,7 @@ const WhyDeveloperSection = () => {
                     {!isOpen && <span className="instruction-text">Click to open</span>}
                 </div>
 
-                <div className="book-content">
+                <div className="book-content" onClick={handleTextClick}>
                     <div className="story-text">
                         {displayedText}
                         {isOpen && currentIndex < storyText.length && <span className="cursor"></span>}
