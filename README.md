@@ -30,7 +30,7 @@
 | 기술 | 설명 |
 | :--- | :--- |
 | **Java (Spring Boot)** | **RESTful API 설계 및 개발**, 서버 구축의 핵심 언어 |
-| **Python (FastAPI, Django)** | **AI 서버 연동** 및 Python 기반의 빠르고 안정적인 백엔드 구축 경험 |
+| **Python (FastAPI)** | **AI 서버 연동** 및 Python 기반의 빠르고 안정적인 백엔드 구축 경험 |
 | **Oracle DB / MySQL** | SQL 및 데이터베이스 설계, 관리 |
 
 ### Tools & DevOps
