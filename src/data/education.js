@@ -17,7 +17,7 @@ const education = [
     },
     {
         type: "개인 학습",
-        institution: "개인 공부 및 스터디",
+        institution: "개인 공부",
         major: "Java Algorithm Study",
         period: "2025.03.01 ~ 현재",
         description: "백준 알고리즘 사이트에서 매일 한 문제씩 알고리즘 문제를 풀며 꾸준히 문제 해결 능력을 키우고 있습니다.",
