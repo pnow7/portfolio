@@ -1,76 +1,139 @@
-# 🚀 풀스택 개발자 박현재 (Pnow7) 포트폴리오
+<div align="center">
 
-"**현재에 충실히, 사용자에게 유용한 가치를 만드는 개발자**"
+# 🚀 Pnow7's Portfolio
+
+**"현재에 충실히, 사용자에게 유용한 가치를 만드는 개발자"**
 
 [![배포 상태](https://img.shields.io/badge/Status-Deployed-success)](https://pnowsportfolio.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat&logo=github)](https://github.com/pnow7)
----
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
+[![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white)](https://threejs.org/)
 
-## 🔗 포트폴리오 바로가기
+**[🌐 Live Demo](https://pnowsportfolio.vercel.app/)** | **[📂 GitHub Repository](https://github.com/pnow7/portfolio)**
 
-| 항목 | 링크 |
-| :--- | :--- |
-| **배포 사이트** | **[https://pnowsportfolio.vercel.app/](https://pnowsportfolio.vercel.app/)** |
-| **GitHub 저장소** | [https://github.com/pnow7/portfolio-repo](https://github.com/pnow7/portfolio) |
+</div>
 
 ---
 
-## 🛠️ 프로젝트 기술 스택 (Projects Technical Stack)
+## 📸 Preview
 
-풀스택 환경에서 다양한 기술을 활용하며 프로젝트를 진행했습니다.
+<div align="center">
 
-### Frontend
-| 기술 | 설명 |
-| :--- | :--- |
-| **React** | SPA 구축 및 컴포넌트 기반 개발 |
-| **HTML/CSS/JS** | 시맨틱 마크업, 반응형 웹 디자인 및 웹 인터랙션/비동기 처리 |
-| **JSP** | Spring MVC 프로젝트에서 프론트엔드/뷰 영역 담당 |
+### 🌙 Dark Mode
+![Dark Mode](./public/darkmode.png)
 
-### Backend & Database
-| 기술 | 설명 |
-| :--- | :--- |
-| **Java (Spring Boot)** | **RESTful API 설계 및 개발**, 서버 구축의 핵심 언어 |
-| **Python (FastAPI)** | **AI 서버 연동** 및 Python 기반의 빠르고 안정적인 백엔드 구축 경험 |
-| **Oracle DB / MySQL** | SQL 및 데이터베이스 설계, 관리 |
+### ☀️ Light Mode
+![Light Mode](./public/whitemode.png)
 
-### Tools & DevOps
-| 기술 | 설명 |
-| :--- | :--- |
-| **Git & GitHub** | 협업 및 버전 관리 (Git FLOW 기반) |
-| **Google Cloud Storage (GCS)** | 팀 단위 이미지 관리 서비스화 및 인프라 구축 |
-| **IntelliJ / VS Code** | 주요 개발 환경 |
-| **Figma** | 와이어프레임 및 디자인 협업 |
+</div>
+
+---
+
+## 🎯 프로젝트 소개
+
+**풀스택 개발자** 박현재의 인터랙티브 포트폴리오 웹사이트입니다.
+
+3D 신경망 네트워크 비주얼과 현대적인 UI/UX를 결합하여 프로젝트 경험, 기술 스택, 교육 이력을 독창적으로 표현했습니다. 다크/라이트 모드를 지원하며, 반응형 디자인으로 모든 디바이스에서 최적화된 경험을 제공합니다.
+
+### ✨ 특징
+
+- **3D 인터랙티브 UI**: Three.js 기반의 신경망 네트워크 비주얼라이제이션
+- **다크/라이트 모드**: 테마 전환 시스템
+- **완전 반응형 디자인**: 모바일/태블릿/데스크톱 최적화
+- **빠른 성능**: Vite 기반 빌드로 초고속 로딩
+- **부드러운 애니메이션**: Framer Motion을 활용한 자연스러운 전환 효과
+- **우주 테마 배경**: 커스텀 파티클 이펙트와 블랙홀 시뮬레이션
+
+---
+
+## 🚀 시작하기
+
+### 사전 요구사항
+
+- Node.js 16.0 이상
+- npm 또는 yarn
+
+### 설치 및 실행
+
+```bash
+# 저장소 클론
+git clone https://github.com/pnow7/portfolio.git
+
+# 프로젝트 디렉토리로 이동
+cd portfolio
+
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
+npm run dev
+
+# 프로덕션 빌드
+npm run build
+
+# 빌드 미리보기
+npm run preview
+```
+
+개발 서버는 기본적으로 `http://localhost:5173`에서 실행됩니다.
 
 ---
 
 ## 💡 프로젝트 하이라이트
 
-사용자 경험(UX)과 기술적 효율성을 중시한 주요 프로젝트들을 소개합니다. 자세한 내용은 배포 사이트를 참고해 주세요.
+사용자 경험(UX)과 기술적 효율성을 중시한 주요 프로젝트들을 소개합니다.
 
-### 1. 🤖 AI 활용 체험 게임 플랫폼: 겜만중 (25.10.10 ~ 25.10.28)
-* **주요 기능:** 사용자의 이미지 및 프롬프트를 기반으로 **DALL·E 3를 활용하여 캐릭터를 생성**하는 AI 체험 게임 플랫폼.
-* **담당 역할:** **AI 이미지 생성 모델 구현 및 최적화**, **JWT 기반 인증/보안 시스템**, GCS 연동 이미지 관리 서비스, 관리자 페이지 등 **풀스택 개발 전반** 담당.
-* **핵심 성과:**
-    * 초기 Stable Diffusion의 한계를 극복하고 **DALL·E 3로 전환**, 이미지 생성 시간을 **20초 이내로 단축**하여 서비스 효율성을 대폭 개선.
-    * `GcsService` 구현을 통한 이미지 관리 로직 표준화 및 팀 협업 환경 구축.
-* **사용 기술:** **Spring Boot, FastAPI, DALL·E 3, YOLOv8, JWT, React, GCS**
-* **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/pnow7/team-Gmaking)
+### 1. 🤖 AI 활용 체험 게임 플랫폼: 겜만중
+**기간:** 2025.10.10 ~ 2025.10.28
+
+**주요 기능**
+- 사용자의 이미지 및 프롬프트를 기반으로 **DALL·E 3를 활용하여 캐릭터를 생성**하는 AI 체험 게임 플랫폼
+
+**담당 역할**
+- **AI 이미지 생성 모델 구현 및 최적화**
+- **JWT 기반 인증/보안 시스템 및 로그인/소셜로그인 기능 구현**
+- GCS 연동 이미지 관리 서비스
+- 관리자 페이지 등 **풀스택 개발 전반** 담당
+
+**기술 스택**
+- Spring Boot, FastAPI, DALL·E 3, YOLOv8, JWT, React, GCS
+
+**링크:** [GitHub Repository](https://github.com/pnow7/team-Gmaking)
 
 ---
 
-### 2. 🍽️ 동해안 맛집 정보 공유 웹 서비스 (25.07.07 ~ 25.07.28)
-* **주요 기능:** 카카오맵 연동 맛집 추천, 사용자 리뷰 기반 **AI 요약 및 감성 분석** 기능 구현.
-* **담당 역할:** 맛집 정보/리뷰/스레드 기능 및 **AI (OpenAI API) 연동** 담당.
-* **사용 기술:** React, Python(FastAPI), Spring Boot, Oracle, Kakao Maps API, OpenAI API
-* **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/Team-2Gether/Local7)
+### 2. 🍽️ 동해안 맛집 정보 공유 웹 서비스
+**기간:** 2025.07.07 ~ 2025.07.28
+
+**주요 기능**
+- 카카오맵 연동 맛집 추천
+- 사용자 리뷰 기반 **AI 요약 및 감성 분석** 기능
+
+**담당 역할**
+- 맛집 정보/리뷰/스레드 기능 구현
+- 관리자 페이지 기능 구현
+- **AI (OpenAI API) 연동** 담당
+
+**기술 스택**
+- React, Python(FastAPI), Spring Boot, Oracle, Kakao Maps API, OpenAI API
+
+**링크:** [GitHub Repository](https://github.com/Team-2Gether/Local7)
 
 ---
 
-### 3. 🏨 기업 스케줄 및 할일 관리 서비스 (25.06.10 ~ 25.06.27)
-* **주요 기능:** 숙박업체 운영 인력의 **객실 운영, 스케줄, 업무 배정 통합 관리** 시스템.
-* **담당 역할:** 객실 관리, 직원 관리, 업무 배정 로직 구현.
-* **사용 기술:** Spring Boot, JSP, Oracle Database, IntelliJ IDEA
-* **자세히 보기:** [프로젝트 GitHub 링크](https://github.com/Team-MobyDick/hms)
+### 3. 🏨 기업 스케줄 및 할일 관리 서비스
+**기간:** 2025.06.10 ~ 2025.06.27
+
+**주요 기능**
+- 숙박업체 운영 인력의 **객실 운영, 스케줄, 업무 배정 통합 관리** 시스템
+
+**담당 역할**
+- 객실 관리, 직원 관리, 업무 배정 로직 구현
+
+**기술 스택**
+- Spring Boot, JSP, Oracle Database, IntelliJ IDEA
+
+**링크:** [GitHub Repository](https://github.com/Team-MobyDick/hms)
 
 ---
 
@@ -78,13 +141,20 @@
 
 > **"현재에 충실히 하는 신입 개발자"**
 >
-> 사용자 경험을 중시하며 문제를 해결하는 것에 즐거움을 느낍니다. 새로운 기술을 배우고 적용하는 것에 대한 열정이 높으며, 맡은 일에 대한 **책임감**을 가지고 팀과 **협업**하여 최상의 결과물을 만들어내겠습니다.
->
-> **키워드:** #성장지향 #문제해결 #책임감 #협업 #꾸준함 #긍정적
+> 사용자 경험을 중시하며 문제를 해결하는 것에 즐거움을 느낍니다.  
+> 새로운 기술을 배우고 적용하는 것에 대한 열정이 높으며,  
+> 맡은 일에 대한 **책임감**을 가지고 팀과 **협업**하여 최상의 결과물을 만들어내겠습니다.
+
+**핵심 가치**
+- **성장지향** - 끊임없이 배우고 발전하는 개발자
+- **문제해결** - 기술로 실질적인 문제를 해결
+- **협업** - 팀과 함께 더 나은 결과를 만들어냄
+- **책임감** - 맡은 일에 대한 완수 의지
+- **꾸준함** - 지속적인 학습과 개선
+- **긍정적** - 긍정적인 마인드로 도전
 
 ---
 
-## 📮 연락처
+**Made by Pnow7**
 
-- **Email:** `phyunjae7333@gmail.com`
-- **GitHub:** [https://github.com/pnow7](https://github.com/pnow7)
+</div>

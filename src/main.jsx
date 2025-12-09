@@ -1,7 +1,7 @@
-// 새로고침 시 항상 최상단으로 이동
 window.addEventListener("beforeunload", () => {
     window.scrollTo(0, 0);
 });
+
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
