@@ -92,7 +92,7 @@ export default function Layout({ children }) {
             <footer className="main-footer">
                 <p>PNOW. All rights reserved.</p>
                 <div className="footer-links">
-                    <a href="https://github.com/pnow7" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <a href="https://github.com/pnow7/portfolio" target="_blank" rel="noopener noreferrer" title="GitHub">
                         <FaGithub />
                     </a>
                 </div>
