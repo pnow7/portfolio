@@ -28,7 +28,7 @@ const projects = [
         duration: "2025.10.01 ~ 2025.10.29",
         gradientColors: 'linear-gradient(135deg, #8BC34A, #4CAF50)',
         cardColor: 'linear-gradient(135deg, rgba(50, 50, 50, 0.95), #363242)',
-        cardTechs: ["Spring Boot", "React", "MySQL", "FastAPI", "Gemini", "DALL·E 3"],
+        cardTechs: ["React", "Spring Boot", "MySQL", "FastAPI", "Gemini", "DALL·E 3"],
         imageFolder: "ai2th",
         // pdf: "/ai2th/AI포트폴리오_박현재.pdf",
         youtube: "https://www.youtube.com/watch?v=raR4i7V-1ts",
@@ -82,7 +82,7 @@ const projects = [
         `.trim(),
         skills: {
             frontend: ["React", "JavaScript", "HTML", "CSS"],
-            backend: ["Java", "Spring Boot", "Oracle DB"],
+            backend: ["Java", "Spring Boot", "MyBatis", "Oracle DB"],
             tools: ["Kakao Maps API", "OpenAi"],
         },
         github: "https://github.com/Team-2Gether/Local7",
@@ -132,9 +132,9 @@ const projects = [
 - **게시판:** 직원 간 소통을 위한 게시판 기능
         `.trim(),
         skills: {
-            frontend: ["JSP"],
-            backend: ["Spring Boot", "Oracle Database"],
-            tools: ["IntelliJ IDEA", "GitHub", "JANDI"],
+            frontend: ["JSP", "JSTL", "JavaScript", "CSS"],
+            backend: ["Spring Boot", "MyBatis", "Oracle Database"],
+            tools: ["VsCode", "IntelliJ IDEA", "GitHub", "JANDI"],
         },
         github: "https://github.com/Team-MobyDick/hms",
         team: "팀",
