@@ -98,7 +98,9 @@ npm run preview
 **기술 스택**
 - Spring Boot, FastAPI, DALL·E 3, YOLOv8, JWT, React, GCS
 
-**링크:** [GitHub Repository](https://github.com/pnow7/team-Gmaking)
+**링크1:** [GitHub Repository](https://github.com/pnow7/gmaking))
+
+**링크2(Docker):** [GitHub Repository](https://github.com/pnow7/team-Gmaking)
 
 ---
 
